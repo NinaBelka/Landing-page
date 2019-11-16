@@ -1,0 +1,21 @@
+.technologies {
+    width: 100%;
+}
+.technologies__titul {
+    font-weight: bold;
+    font-size: 50px;
+}
+.article__technologies {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, 192px);
+    grid-column-gap: 40px;
+    grid-row-gap: 80px;
+    margin: 80px 100px;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 24px;
+    color: #3B424A;
+
+
+}
