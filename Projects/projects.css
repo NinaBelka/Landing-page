@@ -21,6 +21,10 @@
 .article__projects_item {
   position: relative;
   overflow: hidden; }
+  .article__projects_item:hover .article__projects_item-block {
+    display: block;
+    transition-duration: 300ms;
+    top: 0px; }
 
 .article__projects_item-block {
   position: absolute;
@@ -30,15 +34,16 @@
   height: 100%;
   background: rgba(227, 27, 75, 0.6);
   color: white;
-  align-items: flex-end;
-  justify-items: left;
   margin: 0;
-  font-size: 48px;
-  transition-duration: 300ms; }
-
-.article__projects_item:hover .article__projects_item-block {
-  display: block;
   transition-duration: 300ms;
-  top: 0px; }
+  bottom: 0;
+  right: 0; }
+  .article__projects_item-block .article__projects_item-block_text1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 360px 24px 4px; }
+  .article__projects_item-block .article__projects_item-block_text2 {
+    font-size: 16px;
+    margin: 4px 24px 0px; }
 
 /*# sourceMappingURL=projects.css.map */
