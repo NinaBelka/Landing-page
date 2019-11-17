@@ -10,12 +10,12 @@
     margin: 0;
 }
 .article__projects {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 360px);
     grid-template-rows: repeat(2, 440px);
     grid-column-gap: 40px;
     grid-row-gap: 20px;
-    margin: 80px 100px;
     justify-content: center;
 }
     .article__projects_item {

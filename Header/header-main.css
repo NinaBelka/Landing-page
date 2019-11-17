@@ -1,9 +1,10 @@
-body {
-  margin: 0;
+html {
   font-family: 'Source Sans Pro', sans-serif; }
 
+body {
+  margin: 0; }
+
 .header {
-  width: 100%;
   color: white; }
   .header .header__nav,
   .header .header__nav-list {
@@ -22,16 +23,15 @@ body {
     right: 40px;
     list-style-type: none; }
   .header .header__nav-item {
-    width: 126px;
     height: 100%;
     cursor: pointer;
-    text-align: center;
     margin: 0;
     padding: 0; }
   .header .header__nav-item-link {
     color: white;
     text-decoration: none;
-    font-size: 16px; }
+    font-size: 16px;
+    margin-left: 30px; }
     .header .header__nav-item-link:hover {
       border-bottom: 2px solid #A1C5D9; }
     .header .header__nav-item-link:focus {
@@ -48,16 +48,19 @@ body {
   height: 894px;
   width: 100%;
   color: white;
-  justify-items: center; }
+  justify-content: center;
+  align-items: center; }
   .main .main__company-page {
     display: inline-block;
-    text-align: center;
-    width: 100%;
-    font-size: 50px; }
+    width: 500px;
+    font-size: 50px;
+    padding: 0px 0px;
+    top: 50%;
+    left: 50%; }
   .main .main__company-text {
     display: inline-block;
-    text-align: center;
-    width: 100%;
-    font-size: 24px; }
+    width: 770px;
+    font-size: 24px;
+    text-align: center; }
 
 /*# sourceMappingURL=header-main.css.map */
