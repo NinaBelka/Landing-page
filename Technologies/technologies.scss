@@ -1,21 +1,97 @@
 .technologies {
     width: 100%;
+    height: 1050px;
 }
 .technologies__titul {
+    grid-area: titul;
     font-weight: bold;
     font-size: 50px;
+    margin: 100px 0px 0px;
+}
+%item-name {
+    font-weight: bold;
+    font-size: 24px;
+    color: #3B424A;
+    margin: 0;
+}
+.article__technologies-item_name1 {
+    grid-area: name1;
+    @extend %item-name;
+}
+.article__technologies-item_text1 {
+    grid-area: text1;
+}
+%item-line {
+    background: #E75A7C;
+    width: 100%;
+    border-radius: 3px;
+}
+.article__technologies-item_line1 {
+    grid-area: line1;
+    @extend %item-line;
+}
+.article__technologies-item_line2 {
+    grid-area: line2;
+    @extend %item-line;
+}
+.article__technologies-item_name2 {
+    grid-area: name2;
+    @extend %item-name;
+}
+.article__technologies-item_text2 {
+    grid-area: text2;
+}
+.article__technologies-item_name3 {
+    grid-area: name3;
+    @extend %item-name;
+}
+.article__technologies-item_text3 {
+    grid-area: text3;
+}
+.article__technologies-item_name4 {
+    grid-area: name4;
+    @extend %item-name;
+}
+.article__technologies-item_text4 {
+    grid-area: text4;
+    margin: 0;
+}
+.article__technologies-item_name5 {
+    grid-area: name5;
+    @extend %item-name;
+}
+.article__technologies-item_text5 {
+    grid-area: text5;
+}
+.article__technologies-item_name6 {
+    grid-area: name6;
+    @extend %item-name;
+}
+.article__technologies-item_text6 {
+    grid-area: text6;
 }
 .article__technologies {
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    grid-template-rows: repeat(4, 192px);
+    grid-template-rows: 210px 50px 3px 200px 50px 3px 350px;
+    grid-template-areas:
+        "titul . ."
+        "name1 name2 name3"
+        "line1 line1 line1"
+        "text1 text2 text3"
+        "name4 name5 name6"
+        "line2 line2 line2"
+        "text4 text5 text6";
     grid-column-gap: 40px;
-    grid-row-gap: 80px;
-    height: 705px;
+    grid-row-gap: 20px;
+    height: 100%;
     justify-content: center;
     font-weight: 300;
     font-size: 24px;
     color: #3B424A;
-
+    margin: 0px 140px;
 
 }
+
+
+

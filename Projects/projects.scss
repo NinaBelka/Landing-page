@@ -4,52 +4,159 @@
     background: #F2F3F7;
 }
 .projects__titul {
+    grid-area: titul;
     font-weight: bold;
     font-size: 50px;
-    padding: 115px 137px 0px;
-    margin: 0;
+    margin: 115px 0px 30px;
 }
 .article__projects {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    grid-template-rows: repeat(2, 440px);
+    grid-template-areas: 
+    "titul . ."
+    "item1 item2 item3"
+    "item4 item5 item6";
     grid-column-gap: 40px;
     grid-row-gap: 20px;
     justify-content: center;
+    margin: 0px 0px 115px;
 }
-    .article__projects_item {
+    %item {
         position: relative;
         overflow: hidden;
-        &:hover .article__projects_item-block {
-            display: block;
-            transition-duration: 300ms;
-            top: 0px;
-            }
     }
-     .article__projects_item-block {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(227, 27, 75, 0.6);            
-            color: white;
-            margin: 0;
-            transition-duration: 300ms;
-            bottom: 0;
-            right: 0;
-
-            .article__projects_item-block_text1 {
-                font-size: 24px;
-                font-weight: bold;
-                margin: 360px 24px 4px;
-            }            
-            .article__projects_item-block_text2 {
-                font-size: 16px;
-                margin: 4px 24px 0px;
-            }
+    .article__projects_item1 {
+        grid-area: item1;
+        @extend %item;
     }
+    %hover {
+        display: block;
+        transition-duration: 300ms;
+        top: 0px;
+    }
+    .article__projects_item1:hover .article__projects_item1-block1 {
+        @extend %hover;
+    }
+    %item-block {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(227, 27, 75, 0.6);            
+        color: white;
+        margin: 0;
+        transition-duration: 300ms;
+        bottom: 0;
+        right: 0;
+    }
+    %block-text1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 360px 24px 4px;
+    }
+    %block-text2 {
+        font-size: 16px;
+        margin: 4px 24px 0px;
+    }
+    .article__projects_item1-block1 {
+        @extend %item-block;
+     
+        .article__projects_item1-block1_text1 {
+            @extend %block-text1;
+        }      
+        .article__projects_item1-block1_text2 {
+            @extend %block-text2;
+        }
+    }
+    .article__projects_item2 {
+        grid-area: item2;
+        @extend %item;
+    }
+    .article__projects_item2:hover .article__projects_item2-block2 {
+        @extend %hover;
+    }
+    .article__projects_item2-block2 {
+        @extend %item-block;
+        
+        .article__projects_item2-block2_text1 {
+            @extend %block-text1;
+        }            
+        .article__projects_item2-block2_text2 {
+            @extend %block-text2;
+        }
+    }
+    .article__projects_item3 {
+        grid-area: item3;
+        @extend %item;
+    }
+    .article__projects_item3:hover .article__projects_item3-block3 {
+        @extend %hover;
+    }
+    .article__projects_item3-block3 {
+        @extend %item-block;
+             
+        .article__projects_item3-block3_text1 {
+            @extend %block-text1;
+        }            
+        .article__projects_item3-block3_text2 {
+            @extend %block-text2;
+        }
+    }
+    .article__projects_item4 {
+        grid-area: item4;
+        @extend %item;
+    }
+    .article__projects_item4:hover .article__projects_item4-block4 {
+        @extend %hover;
+    }
+    .article__projects_item4-block4 {
+        @extend %item-block;
+                 
+        .article__projects_item4-block4_text1 {
+            @extend %block-text1;
+        }            
+        .article__projects_item4-block4_text2 {
+            @extend %block-text2;
+        }
+    }
+    .article__projects_item5 {
+        grid-area: item5;
+        @extend %item;
+    }
+    .article__projects_item5:hover .article__projects_item5-block5 {
+        @extend %hover;
+    }
+    .article__projects_item5-block5 {
+        @extend %item-block;
+                     
+        .article__projects_item5-block5_text1 {
+            @extend %block-text1;
+        }            
+        .article__projects_item5-block5_text2 {
+            @extend %block-text2;
+        }
+    }
+    .article__projects_item6 {
+        grid-area: item6;
+        @extend %item;
+    }
+    .article__projects_item6:hover .article__projects_item6-block6 {
+        @extend %hover;
+    }
+    .article__projects_item6-block6 {
+        @extend %item-block;
+                         
+        .article__projects_item6-block6_text1 {
+            @extend %block-text1;
+        }            
+        .article__projects_item6-block6_text2 {
+            @extend %block-text2;
+        }
+    }
+                                                            
+    
     
         
 

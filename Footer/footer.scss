@@ -4,13 +4,18 @@
     height: 744px;
     background: #4D636F;
     color: white;
+    justify-items: center;
+    align-items: center;
+
     .footer__contacts-form {
-        padding: 88px 0px 0px 322px;
+        display: flex;
+        flex-direction: column;
+
         .footer__contacts {
-        width: 500px;
-        font-size: 50px;
-        font-weight: 900;
-        margin-bottom: 18px;
+            width: 500px;
+            font-size: 50px;
+            font-weight: 900;
+            margin-bottom: 18px;
         }
         .footer__contacts-item {
             width: 500px;
@@ -31,29 +36,45 @@
                 opacity: 1;
             }
         }
-        .footer__contacts_button-submit {
-            
-            width: 550px;
-            background: #E75A7C;
-            border-radius: 6px;
-            color: white;
-            font-size: 16px;
-            margin-top: 30px;
-            padding: 19px 24px;
-
-            &:hover {
-                background: #FA89A4;    
-            }
-            &:focus {
+            .footer__contacts_button-submit {
+                width: 550px;
                 background: #E75A7C;
-                border: 2px dashed #FFBDCD;
                 border-radius: 6px;
+                color: white;
+                font-size: 16px;
+                margin-top: 30px;
+                padding: 19px 24px;
+
+                &:hover {
+                    background: #FA89A4;    
+                }
+                &:focus {
+                    background: #E75A7C;
+                    border: 2px dashed #FFBDCD;
+                    border-radius: 6px;
+                }
+                &:active {
+                    background: #E31B4B;
+                }
             }
-            &:active {
-                background: #E31B4B;
-            }
-        .footer__our-contacts {
+    }
+    .footer__our-contacts {
+        display: flex;
+        flex-direction: column;
+
+        .footer__our-contacts-titul {
+            font-weight: 900;
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+        .footer__our-contacts-list1 {
+            list-style-type: none;
+        }
+        .footer__our-contacts-list2 {
+            list-style-type: none;
+        }
     }
 }
-    }
-} 
+
+    
