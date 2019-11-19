@@ -4,7 +4,7 @@
   height: 744px;
   background: #4D636F;
   color: white;
-  justify-items: center;
+  justify-content: center;
   align-items: center; }
   .footer .footer__contacts-form {
     display: flex;
@@ -22,6 +22,7 @@
       color: #212121;
       opacity: 0.5;
       margin-top: 30px;
+      margin-right: 80px;
       padding: 19px 24px; }
       .footer .footer__contacts-form .footer__contacts-item:hover {
         background: #FEFEFE; }
@@ -37,24 +38,34 @@
       margin-top: 30px;
       padding: 19px 24px; }
       .footer .footer__contacts-form .footer__contacts_button-submit:hover {
-        background: #FA89A4; }
+        background: #FA89A4;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2); }
       .footer .footer__contacts-form .footer__contacts_button-submit:focus {
         background: #E75A7C;
         border: 2px dashed #FFBDCD;
-        border-radius: 6px; }
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2); }
       .footer .footer__contacts-form .footer__contacts_button-submit:active {
-        background: #E31B4B; }
+        background: #E31B4B;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
+        border: none; }
   .footer .footer__our-contacts {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0; }
     .footer .footer__our-contacts .footer__our-contacts-titul {
       font-weight: 900;
       font-size: 24px;
-      margin: 0;
+      margin-left: 80px;
+      margin-bottom: 0;
       padding: 0; }
     .footer .footer__our-contacts .footer__our-contacts-list1 {
-      list-style-type: none; }
+      list-style-type: none;
+      padding: 0;
+      margin-left: 80px; }
     .footer .footer__our-contacts .footer__our-contacts-list2 {
-      list-style-type: none; }
+      list-style-type: none;
+      padding: 0;
+      margin-left: 80px; }
 
 /*# sourceMappingURL=footer.css.map */

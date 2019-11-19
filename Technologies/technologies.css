@@ -2,65 +2,14 @@
   width: 100%;
   height: 1050px; }
 
-.technologies__titul {
-  grid-area: titul;
-  font-weight: bold;
-  font-size: 50px;
-  margin: 100px 0px 0px; }
-
-.article__technologies-item_name1, .article__technologies-item_name2, .article__technologies-item_name3, .article__technologies-item_name4, .article__technologies-item_name5, .article__technologies-item_name6 {
+.article__technologies .article__technologies-item_name1, .article__technologies .article__technologies-item_name2, .article__technologies .article__technologies-item_name3, .article__technologies .article__technologies-item_name4, .article__technologies .article__technologies-item_name5, .article__technologies .article__technologies-item_name6 {
   font-weight: bold;
   font-size: 24px;
   color: #3B424A;
   margin: 0; }
 
-.article__technologies-item_name1 {
-  grid-area: name1; }
-
-.article__technologies-item_text1 {
-  grid-area: text1; }
-
-.article__technologies-item_line1, .article__technologies-item_line2 {
-  background: #E75A7C;
-  width: 100%;
-  border-radius: 3px; }
-
-.article__technologies-item_line1 {
-  grid-area: line1; }
-
-.article__technologies-item_line2 {
-  grid-area: line2; }
-
-.article__technologies-item_name2 {
-  grid-area: name2; }
-
-.article__technologies-item_text2 {
-  grid-area: text2; }
-
-.article__technologies-item_name3 {
-  grid-area: name3; }
-
-.article__technologies-item_text3 {
-  grid-area: text3; }
-
-.article__technologies-item_name4 {
-  grid-area: name4; }
-
-.article__technologies-item_text4 {
-  grid-area: text4;
-  margin: 0; }
-
-.article__technologies-item_name5 {
-  grid-area: name5; }
-
-.article__technologies-item_text5 {
-  grid-area: text5; }
-
-.article__technologies-item_name6 {
-  grid-area: name6; }
-
-.article__technologies-item_text6 {
-  grid-area: text6; }
+.article__technologies-item_line3 {
+  display: none; }
 
 .article__technologies {
   display: grid;
@@ -68,12 +17,119 @@
   grid-template-rows: 210px 50px 3px 200px 50px 3px 350px;
   grid-template-areas: "titul . ." "name1 name2 name3" "line1 line1 line1" "text1 text2 text3" "name4 name5 name6" "line2 line2 line2" "text4 text5 text6";
   grid-column-gap: 40px;
-  grid-row-gap: 20px;
+  grid-row-gap: 24px;
   height: 100%;
   justify-content: center;
   font-weight: 300;
   font-size: 24px;
   color: #3B424A;
-  margin: 0px 140px; }
+  margin: 0px 140px 100px; }
+  .article__technologies .technologies__titul {
+    grid-area: titul;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 100px 0px 0px; }
+  .article__technologies .article__technologies-item_name1 {
+    grid-area: name1; }
+  .article__technologies .article__technologies-item_text1 {
+    grid-area: text1; }
+  .article__technologies .article__technologies-item_line1, .article__technologies .article__technologies-item_line2 {
+    background: #E75A7C;
+    width: 100%;
+    border-radius: 3px; }
+  .article__technologies .article__technologies-item_line1 {
+    grid-area: line1; }
+  .article__technologies .article__technologies-item_line2 {
+    grid-area: line2; }
+  .article__technologies .article__technologies-item_name2 {
+    grid-area: name2; }
+  .article__technologies .article__technologies-item_text2 {
+    grid-area: text2; }
+  .article__technologies .article__technologies-item_name3 {
+    grid-area: name3; }
+  .article__technologies .article__technologies-item_text3 {
+    grid-area: text3; }
+  .article__technologies .article__technologies-item_name4 {
+    grid-area: name4; }
+  .article__technologies .article__technologies-item_text4 {
+    grid-area: text4;
+    margin: 0; }
+  .article__technologies .article__technologies-item_name5 {
+    grid-area: name5; }
+  .article__technologies .article__technologies-item_text5 {
+    grid-area: text5; }
+  .article__technologies .article__technologies-item_name6 {
+    grid-area: name6; }
+  .article__technologies .article__technologies-item_text6 {
+    grid-area: text6; }
+
+@media (max-width: 980px) {
+  .article__technologies {
+    display: grid;
+    grid-template-columns: repeat(2, 392px);
+    grid-template-rows: 210px 35px 3px 256px  35px 3px 256px 35px 3px 300px;
+    grid-template-areas: "titul . " "name1 name2" "line1 line1" "text1 text2" "name3 name4" "line2 line2" "text3 text4" "name5 name6" ". ." "text5 text6";
+    grid-column-gap: 20px;
+    grid-row-gap: 12px;
+    height: 100%;
+    font-weight: 300;
+    font-size: 20px;
+    color: #3B424A;
+    margin: 0px 123px 100px; }
+    .article__technologies .technologies__titul {
+      font-size: 50px;
+      margin: 100px 0px 0px; }
+    .article__technologies .article__technologies-item_name1,
+    .article__technologies .article__technologies-item_name2,
+    .article__technologies .article__technologies-item_name3,
+    .article__technologies .article__technologies-item_name4,
+    .article__technologies .article__technologies-item_name5,
+    .article__technologies .article__technologies-item_name6 {
+      font-size: 24px; } }
+@media (max-width: 980px) {
+  .article__technologies {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: 180px 35px 3px 256px 35px 3px 256px 35px 3px 300px;
+    grid-column-gap: 33px;
+    grid-row-gap: 12px;
+    height: 100%;
+    font-weight: 300;
+    font-size: 20px;
+    color: #3B424A;
+    margin: 0px 123px 100px; }
+    .article__technologies .technologies__titul {
+      font-size: 48px;
+      margin: 100px 0px 0px; }
+    .article__technologies .article__technologies-item_name1,
+    .article__technologies .article__technologies-item_name2,
+    .article__technologies .article__technologies-item_name3,
+    .article__technologies .article__technologies-item_name4,
+    .article__technologies .article__technologies-item_name5,
+    .article__technologies .article__technologies-item_name6 {
+      font-size: 20px; } }
+@media (max-width: 500px) {
+  .article__technologies {
+    display: grid;
+    grid-template-columns: repeat(1, 285px);
+    grid-template-areas: 70px 35px 3px 78px 35px 3px 104px 35px 3px 52px 35px 3px 182px 50px 3px 130px 35px 3px 52px;
+    grid-template-areas: "titul" "name1" "line1" "text1" "name2" "line2" "text2" "name3" " . " "text3" "name4" " . " "text4" "name5" " . " "text5" "name6" " . " "text6";
+    grid-column-gap: 20px;
+    grid-row-gap: 12px;
+    height: 100%;
+    font-weight: 300;
+    font-size: 14px;
+    color: #3B424A;
+    margin: 0px 123px 100px; }
+    .article__technologies .technologies__titul {
+      font-size: 28px;
+      margin: 100px 0px 0px; }
+    .article__technologies .article__technologies-item_name1,
+    .article__technologies .article__technologies-item_name2,
+    .article__technologies .article__technologies-item_name3,
+    .article__technologies .article__technologies-item_name4,
+    .article__technologies .article__technologies-item_name5,
+    .article__technologies .article__technologies-item_name6 {
+      font-size: 14px; } }
 
 /*# sourceMappingURL=technologies.css.map */

@@ -1,15 +1,6 @@
 .our-approach {
   width: 100%; }
 
-.our-approach__titul {
-  font-weight: bold;
-  font-size: 50px;
-  color: #3B424A;
-  margin: 0; }
-
-.our-approach__titul {
-  grid-area: titul; }
-
 .article__our-approach-item1 {
   grid-area: item1; }
 
@@ -50,7 +41,13 @@
   font-weight: 300;
   font-size: 24px;
   color: #3B424A;
-  margin: 125px 240px 120px; }
+  margin: 126px 240px 120px; }
+  .article__our-approach .our-approach__titul {
+    grid-area: titul;
+    font-weight: bold;
+    font-size: 50px;
+    color: #3B424A;
+    margin: 0; }
   .article__our-approach .article__our-approach-item_oval1,
   .article__our-approach .article__our-approach-item_oval2,
   .article__our-approach .article__our-approach-item_oval3,
@@ -110,13 +107,88 @@
   border-radius: 6px; }
 
 .article__our-approach_submit:hover {
-  background: #FA89A4; }
+  background: #FA89A4;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2); }
 
 .article__our-approach_submit:focus {
   background: #E75A7C;
-  border: 2px dashed #FFBDCD; }
+  border: 2px dashed #FFBDCD;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2); }
 
 .article__our-approach_submit:active {
-  background: #E31B4B; }
+  background: #E31B4B;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
+  border: none; }
+
+@media (max-width: 980px) {
+  .article__our-approach {
+    grid-column-gap: none;
+    grid-row-gap: none;
+    justify-content: center;
+    font-size: 20px;
+    margin: 111px 108px 144px; }
+    .article__our-approach .our-approach__titul {
+      font-size: 48px; }
+
+  .article__our-approach_idea .article__our-approach_idea-text {
+    width: 833px; }
+  .article__our-approach_idea .article__our-approach_submit {
+    width: 295px; } }
+@media (max-width: 768px) {
+  .article__our-approach {
+    grid-template-columns: repeat(1, 589px);
+    grid-template-areas: "titul" "image1" "item1" "image2" "item2" "image3" "item3" "image4" "item4" "image5" "item5";
+    justify-content: center;
+    margin: 66px 89px; }
+    .article__our-approach .our-approach__titul {
+      font-size: 36px; }
+
+  .article__our-approach_idea .article__our-approach_idea-text {
+    width: 589px;
+    font-size: 20px; }
+  .article__our-approach_idea .article__our-approach_submit {
+    width: 225px; } }
+@media (max-width: 500px) {
+  .article__our-approach {
+    grid-template-columns: repeat(1, 286px);
+    margin: 48px 45px;
+    font-size: 14px; }
+    .article__our-approach .our-approach__titul {
+      font-size: 24px; }
+    .article__our-approach .article__our-approach-item_name {
+      font-size: 16px; }
+    .article__our-approach .oval {
+      width: 84px;
+      height: 84px; }
+    .article__our-approach .article__our-approach-item_oval-icon1,
+    .article__our-approach .article__our-approach-item_oval-icon2,
+    .article__our-approach .article__our-approach-item_oval-icon3,
+    .article__our-approach .article__our-approach-item_oval-icon4,
+    .article__our-approach .article__our-approach-item_oval-icon5 {
+      width: 50px;
+      height: 50px; }
+    .article__our-approach .article__our-approach-item_oval-icon1 {
+      margin: 20px 0px 0px -20px; }
+    .article__our-approach .article__our-approach-item_oval-icon2 {
+      margin: 20px 0px 0px -30px; }
+    .article__our-approach .article__our-approach-item_oval-icon3 {
+      margin: 20px 0px 0px -20px; }
+    .article__our-approach .article__our-approach-item_oval-icon4 {
+      margin: 15px 0px 0px -25px; }
+    .article__our-approach .article__our-approach-item_oval-icon5 {
+      margin: 15px 0px 0px -15px; }
+
+  .article__our-approach_idea {
+    height: 412px; }
+    .article__our-approach_idea .article__our-approach_idea-name {
+      font-size: 24px;
+      width: 146px;
+      margin: 52px 0px 16px; }
+    .article__our-approach_idea .article__our-approach_idea-text {
+      width: 286px;
+      font-size: 18px; }
+    .article__our-approach_idea .article__our-approach_submit {
+      width: 228px;
+      font-size: 16px; } }
 
 /*# sourceMappingURL=our_approach.css.map */
