@@ -3,20 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Header/header-main.css" />
-    <link rel="stylesheet" href="./Footer/footer.css" />
-    <link rel="stylesheet" href="./Projects/projects.css" />
-    <link rel="stylesheet" href="./Technologies/technologies.css" />
-    <link rel="stylesheet" href="./Our approach/our_approach.css" />
-    <link rel="stylesheet" href="./What we do/what-we-do.css" />
+    <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
     <title> Landing-page Компании </title>
 </head>
 <body>
     <header class="header">
+        <div class="header__nav-name"> COMPANY NAME </div>
         <nav class="header-nav">
-            <div class="header__nav-name"> COMPANY NAME </div>
-
             <ul class="header__nav-list"> 
                 <li class="header__nav-item">
                     <a class="header__nav-item-link" href="#what-we-do"> What we do </a>
@@ -36,66 +30,73 @@
             </ul>
             <ul class="heder__nav-icon-menu">
                 <li class="heder__nav-icon">
-                    <div class="heder__nav-icon1"> </div> </li>
+                    <div class="heder__nav-icon1"> </div> 
+                </li>
                 <li class="heder__nav-icon">
-                    <div class="heder__nav-icon2"> </div> </li>
+                    <div class="heder__nav-icon2"> </div> 
+                </li>
                 <li class="heder__nav-icon">
-                    <div class="heder__nav-icon3"> </div> </li>
+                    <div class="heder__nav-icon3"> </div> 
+                </li>
             </ul>
         </nav>
-    </header>
+        <section class="company">
+            <div class="company__page"> Company landing page </div>
 
-    <main class="main">
-            <div class="main__company-page"> Company landing page </div>
-
-            <div class="main__company-text"> 
+            <div class="company__text"> 
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Quod laborum aperiam omnis deserunt! In quisquam illum 
                 dolorum.
             </div>
-    </main>
+        </section>
+    </header>
 
+    <main>
         <article class="what-we-do">
             <section class="article__what-we-do">
-                    <h2 class="article__what-we-do_titul" id="what-we-do"> What we do </h2>
-                    <div class="article__what-we-do_text"> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Aut pariatur facere quas? Optio animi ab quibusdam qui. 
-                        Cupiditate. <strong>Lorem ipsum dolor sit</strong> 
-                        amet consectetur adipisicing elit. Rerum  
-                        quibusdam, natus, laboriosam doloremque 
-                        deleniti enim officia voluptate porro debitis?
-                    </div>
+                <h2 class="article__what-we-do_titul" id="what-we-do"> What we do </h2>
+                <div class="article__what-we-do_text"> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aut pariatur facere quas? Optio animi ab quibusdam qui. 
+                    Cupiditate. <strong>Lorem ipsum dolor sit</strong> 
+                    amet consectetur adipisicing elit. Rerum  
+                    quibusdam, natus, laboriosam doloremque 
+                    deleniti enim officia voluptate porro debitis?
+                    laboriosam enim officia enim officia voluptate porro.
+                </div>
             </section>
 
             <Section class="article__what-we-do_list">
                 <ul class="article__what-we-do_list-items">
                     <li class="article__what-we-do_item"> 7&plus; 
                         <p class="article__what-we-do_item-text"> 
-                        <br /> Partners </p> </li>
+                        Partners </p> 
+                    </li>
                     <li class="article__what-we-do_item"> 50&plus;
                         <p class="article__what-we-do_item-text"> 
-                        <br /> Employees </p> </li>
+                        Employees </p> 
+                    </li>
                     <li class="article__what-we-do_item"> &#36;100&#44;000&plus; 
                         <p class="article__what-we-do_item-text"> 
-                        <br /> Profit </p></li>
+                        Profit </p>
+                    </li>
                     <li class="article__what-we-do_item"> 30&plus; 
                         <p class="article__what-we-do_item-text"> 
-                        <br /> Meetings </p> </li>
+                        Meetings </p> 
+                    </li>
                 </ul>
             </Section>
         </article>
 
         <article class="our-approach">
-   
             <section class="article__our-approach">
-                
-                <h2 class="our-approach__titul" id="our-approach"> 
-                    Our-approach </h2>
-                            
+                <h2 class="article__our-approach_titul" id="our-approach"> 
+                    Our-approach 
+                </h2>
                 <div class="article__our-approach-item1">
                     <h3 class="article__our-approach-item_name">
-                        Change welcomed by organisation </h3>
+                        Change welcomed by organisation 
+                    </h3>
                     <div>
                         Lorem ipsum, dolor sit amet consectetur 
                         adipisicing elit. Eveniet voluptates, dolores 
@@ -105,20 +106,23 @@
                         inventore incidunt?
                     </div>
                 </div>
-                <div class="article__our-approach-item_oval1">
-                    <img class="article__our-approach-item_oval-icon1"
-                         src="/Icons/appointment 1.png" alt="" />
-                    <img class="oval" src="/Icons/Oval.png" alt="Pink oval" />
-                
+
+                <div class="article__our-approach-icon1">
+                    <div class="circle"></div>
+                    <img class="article__our-approach-item_icon1"
+                         src="/Icons/Icon1.svg" alt="Icon" />
                 </div>
-                <div class="article__our-approach-item_oval2">
-                    <img class="oval" src="/Icons/Oval.png" alt="Pink oval" />
-                    <img class="article__our-approach-item_oval-icon2"
-                         src="/Icons/focus 1.png" alt="Icon" />
+
+                <div class="article__our-approach-icon2">
+                <div class="circle"></div>
+                <img class="article__our-approach-item_icon2" 
+                     src="/Icons/Icon2.svg" alt="Icon" />
                 </div>
+
                 <div class="article__our-approach-item2">
                     <h3 class="article__our-approach-item_name"> 
-                        Maintaiming the brand focus  </h3>
+                        Maintaiming the brand focus  
+                    </h3>
                     <div>
                         Lorem ipsum, dolor sit amet consectetur 
                         adipisicing elit. Eveniet voluptates, dolores 
@@ -128,9 +132,11 @@
                         inventore incidunt?
                     </div>
                 </div>
+
                 <div class="article__our-approach-item3">
                     <h3 class="article__our-approach-item_name">
-                        Expertise and talent </h3>
+                        Expertise and talent 
+                    </h3>
                     <div>
                         Lorem ipsum, dolor sit amet consectetur 
                         adipisicing elit. Eveniet voluptates, dolores 
@@ -140,20 +146,23 @@
                         inventore incidunt?
                     </div>
                 </div>
-                <div class="article__our-approach-item_oval3">
-                    <img class="article__our-approach-item_oval-icon3"
-                         src="/Icons/skills 1.png" alt="Icon">
-                    <img class="oval" src="/Icons/Oval.png" alt="Pink oval" />
 
+                <div class="article__our-approach-icon3">
+                    <div class="circle"></div>
+                    <img class="article__our-approach-item_icon3" 
+                         src="/Icons/Icon3.svg" alt="Icon" />
                 </div>
-                <div class="article__our-approach-item_oval4">
-                    <img class="oval" src="/Icons/Oval.png" alt="Pink oval" />
-                    <img class="article__our-approach-item_oval-icon4"
-                         src="/Icons/Vector (1).png" alt="Icon">
+
+                <div class="article__our-approach-icon4">
+                    <div class="circle"></div>
+                    <img class="article__our-approach-item_icon4"
+                         src="/Icons/Icon4.svg" alt="Icon" />
                 </div>
+
                 <div class="article__our-approach-item4">
                     <h3 class="article__our-approach-item_name">
-                        Pragmatic and proven methods </h3>
+                        Pragmatic and proven methods 
+                    </h3>
                     <div>
                         Lorem ipsum, dolor sit amet consectetur 
                         adipisicing elit. Eveniet voluptates, dolores 
@@ -163,9 +172,11 @@
                         inventore incidunt?
                     </div>
                 </div>
+
                 <div class="article__our-approach-item5">
                     <h3 class="article__our-approach-item_name">
-                        Corporate communications </h3>
+                        Corporate communications 
+                    </h3>
                     <div>
                         Lorem ipsum, dolor sit amet consectetur 
                         adipisicing elit. Eveniet voluptates, dolores 
@@ -175,34 +186,38 @@
                         inventore incidunt?
                     </div>
                 </div>
-                    <div class="article__our-approach-item_oval5">
-                        <img class="article__our-approach-item_oval-icon5"
-                             src="/Icons/conversation 1.png" alt="">
-                        <img class="oval" src="/Icons/Oval.png" alt="Pink oval" />
-    
-                    </div>
+
+                <div class="article__our-approach-icon5">
+                    <div class="circle"></div>
+                    <img class="article__our-approach-item_icon5"
+                         src="/Icons/Icon5.svg" alt="Icon" />
+                </div>
             </section>
 
             <section class="article__our-approach_idea">
-                <h2 class="article__our-approach_idea-name"> Have an idea? </h2>
+                <h2 class="article__our-approach_idea-name"> Have an idea? 
+                </h2>
                 <div class="article__our-approach_idea-text"> 
                       Lorem ipsum dolor sit amet consectetur adipisicing 
                       elit. Libero iste exercitationem, natus provident 
                       minus veritatis, totam.
                 </div>
                 <button class="article__our-approach_submit" 
-                        type="submit"> CONTACT US </button>
+                        type="submit"> CONTACT US 
+                </button>
             </section>
         </article>
 
         <article class="technologies">
             <section class="article__technologies">
 
-                <h2 class="technologies__titul" id="technologies"> Technologies </h2>
-                
+                <h2 class="technologies__titul" id="technologies"> Technologies 
+                </h2>
                 <h3 class="article__technologies-item_name1"> 
-                     Software development </h3>
-                <div class="article__technologies-item_line1"></div>
+                     Software development 
+                </h3>
+                <div class="article__technologies-item_line1">
+                </div>
                 <div class="article__technologies-item_text1">
                      Lorem ipsum, dolor sit amet consectetur 
                      adipisicing elit. Eveniet voluptates, dolores 
@@ -210,8 +225,10 @@
                 </div>
 
                 <h3 class="article__technologies-item_name2"> 
-                     Automation </h3>
-                <div class="article__technologies-item_line2"></div>
+                     Automation 
+                </h3>
+                <div class="article__technologies-item_line2">
+                </div>
                 <div class="article__technologies-item_text2">
                     Lorem ipsum, dolor sit amet consectetur 
                     adipisicing elit. Eveniet voluptates, dolores 
@@ -220,29 +237,37 @@
                 </div>
 
                 <h3 class="article__technologies-item_name3"> 
-                    Cloud </h3>
-                <div class="article__technologies-item_line3"></div>
+                    Cloud 
+                </h3>
+                <div class="article__technologies-item_line3">
+                </div>
                 <div class="article__technologies-item_text3">
                     Lorem ipsum, dolor sit amet consectetur 
                     adipisicing elit. Eveniet voluptates.
                 </div>
 
                 <h3 class="article__technologies-item_name4"> 
-                    DevOps </h3>
-                <div class="article__technologies-item_line4"></div>
+                    DevOps 
+                </h3>
+                <div class="article__technologies-item_line4">
+                </div>
                 <div class="article__technologies-item_text4">
                     <div> <strong>First:</strong> ipsum, dolor sit amet consectetur 
-                    adipisicing elit. Eveniet, dolores explicabo placeat 
-                    exercitationem.</div>
+                          adipisicing elit. Eveniet, dolores explicabo placeat 
+                          exercitationem.
+                    </div>
                     <p> <strong>Second:</strong> accusamus fuga 
-                    ipsam ratione, repudiandae, adipisci illum 
-                    sapiente quod vero esse? Architecto inventore 
-                    incidunt?</p>
+                        ipsam ratione, repudiandae, adipisci illum 
+                        sapiente quod vero esse? Architecto inventore 
+                        incidunt?
+                    </p>
                 </div>
 
                 <h3 class="article__technologies-item_name5"> 
-                    Agile consulting </h3>
-                <div class="article__technologies-item_line5"></div>
+                    Agile consulting 
+                </h3>
+                <div class="article__technologies-item_line5">
+                </div>
                 <div class="article__technologies-item_text5">
                     Lorem ipsum, dolor sit amet consectetur 
                     adipisicing elit. Eveniet voluptates, dolores 
@@ -252,8 +277,10 @@
                 </div>
 
                 <h3 class="article__technologies-item_name6"> 
-                     Digital Transformation </h3>
-                <div class="article__technologies-item_line6"></div>
+                     Digital Transformation 
+                </h3>
+                <div class="article__technologies-item_line6">
+                </div>
                 <div class="article__technologies-item_text6">
                     Lorem ipsum, dolor sit amet consectetur 
                     adipisicing elit.               
@@ -262,103 +289,114 @@
         </article>
 
         <article class="projects">
+            <h2 class="projects__titul" id="projects"> Projects 
+            </h2>
             <section class="article__projects">
-                <h2 class="projects__titul" id="projects"> Projects </h2>
-                <div class="article__projects_item1">
-                    <img  src="./Images/image 1.png" 
-                          alt="Projects photo" />
-                    <span class="article__projects_item1-block1"> 
-                          <div class="article__projects_item1-block1_text1"> 
-                               PROJECT 1 </div>
-                          <div class="article__projects_item1-block1_text2"> 
-                               Brief description </div>
+                <div class="article__projects_item">
+                    <img  src="./Images/image 1.png" alt="Projects photo" />
+                    <span class="article__projects_item-block"> 
+                        <div class="article__projects_item-block_text1"> 
+                               PROJECT 1 
+                        </div>
+                        <div class="article__projects_item-block_text2"> 
+                               Brief description 
+                        </div>
                     </span>
                 </div>
-                <div class="article__projects_item2">
-                    <img src="./Images/image 2.png" 
-                         alt="Projects photo" />
-                    <span class="article__projects_item2-block2"> 
-                        <div class="article__projects_item2-block2_text1">  
-                             PROJECT 2 </div>
-                        <div class="article__projects_item2-block2_text2">
-                             Brief description </div>
+                <div class="article__projects_item">
+                    <img src="./Images/image 2.png" alt="Projects photo" />
+                    <span class="article__projects_item-block"> 
+                        <div class="article__projects_item-block_text1">  
+                             PROJECT 2 
+                        </div>
+                        <div class="article__projects_item-block_text2">
+                             Brief description 
+                        </div>
                     </span>
                 </div>
-                <div class="article__projects_item3">
-                    <img src="./Images/image 3.png" 
-                          alt="Projects photo" />
-                    <span class="article__projects_item3-block3"> 
-                        <div class="article__projects_item3-block3_text1">  
-                             PROJECT 3 </div>
-                        <div class="article__projects_item3-block3_text2">
-                             Brief description </div>
+                <div class="article__projects_item">
+                    <img src="./Images/image 3.png" alt="Projects photo" />
+                    <span class="article__projects_item-block"> 
+                        <div class="article__projects_item-block_text1">  
+                             PROJECT 3 
+                        </div>
+                        <div class="article__projects_item-block_text2">
+                             Brief description 
+                        </div>
                     </span>
                 </div>
-                <div class="article__projects_item4">
-                    <img src="./Images/image 4.png" 
-                         alt="Projects photo" />
-                    <span class="article__projects_item4-block4"> 
-                        <div class="article__projects_item4-block4_text1">  
-                             PROJECT 4 </div>
-                        <div class="article__projects_item4-block4_text2">
-                             Brief description </div>
+                <div class="article__projects_item">
+                    <img src="./Images/image 4.png" alt="Projects photo" />
+                    <span class="article__projects_item-block"> 
+                        <div class="article__projects_item-block_text1">  
+                             PROJECT 4 
+                        </div>
+                        <div class="article__projects_item-block_text2">
+                             Brief description 
+                        </div>
                     </span>
                 </div>
-                <div class="article__projects_item5">
-                    <img src="./Images/image 5.png" 
-                        alt="Projects photo" />
-                    <span class="article__projects_item5-block5"> 
-                        <div class="article__projects_item5-block5_text1">  
-                             PROJECT 5 </div>
-                        <div class="article__projects_item5-block5_text2">
-                             Brief description </div>
+                <div class="article__projects_item">
+                    <img src="./Images/image 5.png" alt="Projects photo" />
+                    <span class="article__projects_item-block"> 
+                        <div class="article__projects_item-block_text1">  
+                             PROJECT 5 
+                        </div>
+                        <div class="article__projects_item-block_text2">
+                             Brief description 
+                        </div>
                     </span>
                 </div>
-                <div class="article__projects_item6">
-                    <img src="./Images/image 6.png" 
-                         alt="Projects photo" />
-                    <span class="article__projects_item6-block6"> 
-                        <div class="article__projects_item6-block6_text1">  
-                             PROJECT 6 </div>
-                        <div class="article__projects_item6-block6_text2">
-                             Brief description </div>
+                <div class="article__projects_item">
+                    <img src="./Images/image 6.png" alt="Projects photo" />
+                    <span class="article__projects_item-block"> 
+                        <div class="article__projects_item-block_text1">  
+                             PROJECT 6 
+                        </div>
+                        <div class="article__projects_item-block_text2">
+                             Brief description 
+                        </div>
                     </span>
                 </div>
             </section>
         </article>
+    </main>
     <footer class="footer">
         <form class="footer__contacts-form" action="#">
-            <div class="footer__contacts" id="contacts"> Contacts </div>
-
-            <input class="footer__contacts-item" 
-                   type="text" placeholder="Name" minlength="2" maxlength="50" 
+            <div class="footer__contacts" id="contacts"> Contacts 
+            </div>
+            <input class="footer__contacts-item" type="text" 
+                   placeholder="Name" minlength="2" maxlength="50" 
                    required /> 
-            <input class="footer__contacts-item" 
-                   type="email" placeholder="Email" required />
-            <input class="footer__contacts-item" 
-                   type="tel" placeholder="Phone number"/>
-            <textarea class="footer__contacts-item" 
-                      maxlength="300px" placeholder="Your message" required></textarea>
-            <button class="footer__contacts_button-submit" 
-                    type="submit"> Send Message </button>
+            <input class="footer__contacts-item" type="email" 
+                   placeholder="Email" required />
+            <input class="footer__contacts-item" type="tel" 
+                   placeholder="Phone number"/>
+            <textarea class="footer__contacts-item1" maxlength="300px" 
+                      placeholder="Your message" required>
+            </textarea>
+            <button class="footer__contacts_button-submit" type="submit"> Send Message 
+            </button>
         </form>
-
         <section class="footer__our-contacts">
-            <h3 class="footer__our-contacts-titul"> Our contacts </h3>
-            <ul class="footer__our-contacts-list1"> <h4> Office 1 </h4>
-            <li> Country </li>
-            <li> City </li>
-            <li> Street </li>
-            <li> +9 (999) 999 99 99 </li>
-            </ul>
+            <h3 class="footer__our-contacts-titul"> Our contacts 
+            </h3>
+            <div class="footer__our-contacts-list1"> 
+                <p class="footer__our-contacts-office"> Office 1 </p>
+                <p class="footer__our-contacts-info"> Country </p>
+                <p class="footer__our-contacts-info"> City </p>
+                <p class="footer__our-contacts-info"> Street </p>
+                <p class="footer__our-contacts-info"> +9 (999) 999 99 99 </p>
+            </div>
 
-            <ul class="footer__our-contacts-list2"> <h4> Office 2 </h4>
-                <li> Country </li>
-                <li> City </li>
-                <li> Street </li>
-                <li> +9 (999) 999 99 99 </li>
-                </ul>
-            </section>
+            <div class="footer__our-contacts-list2">
+                <p class="footer__our-contacts-office"> Office 2 </p>
+                <p class="footer__our-contacts-info"> Country </p>
+                <p class="footer__our-contacts-info"> City </p>
+                <p class="footer__our-contacts-info"> Street </p>
+                <p class="footer__our-contacts-info"> +9 (999) 999 99 99 </p>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
