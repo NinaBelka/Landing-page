@@ -1,40 +1,53 @@
 .technologies {
     width: 100%;
-    height: 1050px;
-}
-%item-name {
-    font-weight: bold;
-    font-size: 24px;
-    color: #3B424A;
-    margin: 0;
-}
-.article__technologies {
-    display: grid;
-    grid-template-columns: repeat(3, 360px);
-    grid-template-rows: 210px 50px 3px 200px 50px 3px 350px;
-    grid-template-areas:
-        "titul . ."
-        "name1 name2 name3"
-        "line1 line1 line1"
-        "text1 text2 text3"
-        "name4 name5 name6"
-        "line2 line2 line2"
-        "text4 text5 text6";
-    grid-column-gap: 40px;
-    grid-row-gap: 24px;
-    height: 100%;
-    justify-content: center;
-    font-weight: 300;
-    font-size: 24px;
-    color: #3B424A;
-    margin: 0px 140px 100px;
+
+    .article__technologies {
+        display: grid;
+        width: 100%;
+        height: 1000px;
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: 160px 50px 3px 200px 50px 3px 350px;
+        grid-template-areas:
+            "titul . ."
+            "name1 name2 name3"
+            "line1 line1 line1"
+            "text1 text2 text3"
+            "name4 name5 name6"
+            "line2 line2 line2"
+            "text4 text5 text6";
+        grid-column-gap: 40px;
+        grid-row-gap: 24px;
+        justify-content: center;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        color: #3B424A;
+
+        .article__technologies-item_line3,
+        .article__technologies-item_line4,
+        .article__technologies-item_line5,
+        .article__technologies-item_line6 {
+            display: none;
+        }
 
         .technologies__titul {
             grid-area: titul;
             font-weight: bold;
             font-size: 50px;
-            margin: 100px 0px 0px;
+            line-height: 63px;
+            color: #2C2F3C;
+            margin: 0px 0px 0px;
+            align-self: end;
         }
+
+        %item-name {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            color: #3B424A;
+            margin: 0;
+        }
+        
         .article__technologies-item_name1{
             grid-area: name1;
             @extend %item-name;
@@ -100,6 +113,9 @@
         .article__technologies-item_text4 {
             grid-area: text4;
             margin: 0;
+            .article__technologies-item_text {
+                margin-top: 25px;
+            }
         }
         .article__technologies-item_text5 {
             grid-area: text5;
@@ -107,13 +123,19 @@
         .article__technologies-item_text6 {
             grid-area: text6;
         }
+    }
 }
+
 @media (max-width: 980px) {
+    .technologies {
+        width: 100%;
+        height: 1100px;
+    }
+    
     .article__technologies {
         display: grid;
-        grid-template-columns: repeat(2, 392px);
-        grid-template-rows: 210px 35px 3px 256px 
-                            35px 3px 256px 35px 3px 300px;
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: 200px 35px 3px 190px  35px 3px 256px 35px 3px 300px;
         grid-template-areas:
             "titul . "
             "name1 name2"
@@ -133,9 +155,14 @@
         color: #3B424A;
         margin: 0px 123px 100px;
 
+        .article__technologies-item_line3 {
+            display: block;
+        }
+
         .technologies__titul {
             font-size: 50px;
-            margin: 72px 0px 0px;
+            line-height: 60px;
+            margin: 100px 0px 0px;
         }
         .article__technologies-item_name1,
         .article__technologies-item_name2,
@@ -147,16 +174,19 @@
         }
     }
 }
-@media (max-width: 980px) {
+@media (max-width: 768px) {
+    .technologies {
+        width: 100%;
+        height: 1270px;
+    }
+
     .article__technologies {
         display: grid;
-        grid-template-columns: repeat(2, 280px);
-        grid-template-rows: 180px 35px 3px 175px 35px 3px 250px 35px 3px 300px;
-        grid-column-gap: 58px;
+        grid-template-columns: repeat(2, 370px);
+        grid-template-rows: 180px 35px 3px 230px 35px 3px 310px 35px 3px 300px;        grid-column-gap: 33px;
         grid-row-gap: 12px;
         height: 100%;
         font-weight: 300;
-        font-size: 20px;
         color: #3B424A;
         margin: 0px 88px 72px;
 
@@ -174,13 +204,20 @@
         }
     }
 }
+
+
 @media (max-width: 500px) {
+    .technologies {
+        width: 100%;
+        height: 1200px;
+    }
+    
     .article__technologies {
         display: grid;
         grid-template-columns: repeat(1, 285px);
-        grid-template-rows: 70px 20px 3px 78px
-        20px 3px 104px 20px 3px 52px 20px 3px 162px
-        20px 3px 130px 20px 3px 52px;
+        grid-template-rows: 35px 35px 3px 78px
+        35px 3px 104px 35px 3px 52px 35px 3px 182px
+        35px 3px 130px 35px 3px 52px;
         grid-template-areas:
             "titul"
             "name1"
@@ -201,16 +238,24 @@
             "name6"
             "line6"
             "text6";
-        grid-column-gap: 20px;
-        grid-row-gap: 12px;
+        grid-column-gap: 33px;
+        grid-row-gap: 16px;
         height: 100%;
         font-weight: 300;
         font-size: 14px;
+        line-height: 26px;
         color: #3B424A;
         margin: 36px 44px;
 
+        .article__technologies-item_line4,
+        .article__technologies-item_line5,
+        .article__technologies-item_line6 {
+            display: block;
+        }
+
         .technologies__titul {
             font-size: 28px;
+            line-height: 35px;
             margin: 0;
         }
         .article__technologies-item_name1,
@@ -219,7 +264,8 @@
         .article__technologies-item_name4,
         .article__technologies-item_name5,
         .article__technologies-item_name6 {
-            font-size: 14px;
+            font-size: 18px;
+            line-height: 23px;
         }
     }
 }

@@ -1,9 +1,12 @@
 .our-approach {
     width: 100%;
 }
+
 .article__our-approach {
+    height: 1800px;
     display: grid;
     grid-template-columns: repeat(2, 460px);
+    grid-template-rows: 190px 250px 250px 272px 304px 250px;
     grid-template-areas:
         "titul ."
         "item1 image1"
@@ -19,14 +22,14 @@
     font-weight: 300;
     font-size: 24px;
     color: #3B424A;
-    margin: 126px 240px 126px;
 
     .article__our-approach_titul {
         grid-area: titul;
         font-weight: bold;
         font-size: 50px;
+        line-height: 63px;
         color: #3B424A;
-        margin: 0;
+        margin-top: 126px;
         align-self: start;
         justify-self: start;
     }
@@ -126,6 +129,7 @@
         color: #3B424A;
     }
 }
+
 .article__our-approach_idea {
     display: flex;
     flex-direction: column;
@@ -175,62 +179,76 @@
 }
 
 @media (max-width: 980px) {
-    .article__our-approach {
-        grid-template-columns: repeat(3, 225px);
-        grid-template-areas:
-            "titul titul ."
-            "item1 item1 image1"
-            "image2 item2 item2"
-            "item3 item3 image3"
-            "image4 item4 item4"
-            "item5 item5 image5";
-        justify-content: center;
-        justify-items: start;
-        margin: 66px 89px;
-        font-size: 20px;
-        margin: 111px 108px 144px;
+    .our-approach {
 
-        .article__our-approach_titul {
-            font-size: 48px;
-        }
-    }
-    .article__our-approach_idea {
+        .article__our-approach {
+            height: 1770px;
+            grid-template-columns: repeat(3, 225px);
+            grid-template-areas:
+                "titul titul ."
+                "item1 item1 image1"
+                "image2 item2 item2"
+                "item3 item3 image3"
+                "image4 item4 item4"
+                "item5 item5 image5";
+            justify-content: center;
+            justify-items: start;
+            font-size: 20px;
 
-        .article__our-approach_idea-text {
-            width: 833px;
+            .article__our-approach_titul {
+                font-size: 48px;
+                line-height: 60px;
+                margin-top: 112px;
+            }
+            .article__our-approach-icon1, 
+            .article__our-approach-icon3,
+            .article__our-approach-icon5 {
+                justify-self: center;
+            }
         }
-        .article__our-approach_submit {
-            width: 295px;
+        .article__our-approach_idea {
+
+            .article__our-approach_idea-text {
+                width: 833px;
+            }
+            .article__our-approach_submit {
+                width: 295px;
+            }
         }
     }
 }
 @media (max-width: 768px) {
-    .article__our-approach {
-        grid-template-columns: repeat(1, 589px);
-        grid-template-areas:
-            "titul"
-            "image1"
-            "item1"
-            "image2"
-            "item2"
-            "image3"
-            "item3"
-            "image4"
-            "item4"
-            "image5"
-            "item5";
-        justify-content: center;
-        justify-items: center;
-        margin: 66px 89px;
+    .our-approach {
 
-        .article__our-approach_titul {
-            font-size: 36px;
+        .article__our-approach {
+            height: 2400px;
+            grid-template-columns: repeat(1, 589px);
+            grid-template-rows: 120px 180px 160px 180px 170px 180px 200px 180px 200px 180px 170px;
+            grid-template-areas:
+                "titul"
+                "image1"
+                "item1"
+                "image2"
+                "item2"
+                "image3"
+                "item3"
+                "image4"
+                "item4"
+                "image5"
+                "item5";
+            justify-content: center;
+            justify-items: center;
+
+            .article__our-approach_titul {
+                font-size: 36px;
+                line-height: 45px;
+                margin-top: 66px;
+            }
+            .article__our-approach-item_name {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
         }
-        .article__our-approach-item_name {
-            font-size: 20px;
-            margin-bottom: 16px;
-        }
-        
     }
     .article__our-approach_idea {
 
@@ -244,55 +262,57 @@
     }
 }
 @media (max-width: 500px) {
-    .article__our-approach {
-        grid-template-columns: repeat(1, 286px);
-        margin: 48px 45px;
+    .our-approach {
 
-        .article__our-approach_titul {
-            font-size: 24px;
-        }
-        .article__our-approach-item1,
-        .article__our-approach-item2,
-        .article__our-approach-item3,
-        .article__our-approach-item4,
-        .article__our-approach-item5 {
-            font-size: 14px;
-            line-height: 26px;
-        }
+        .article__our-approach {
+            grid-template-columns: repeat(1, 286px);
+            grid-template-rows: 100px 100px 250px 100px 250px 100px 272px 100px 304px 100px 250px;
 
-        .article__our-approach-item_name {
-            font-size: 16px;
-        }
-        .article__our-approach-icon1,
-        .article__our-approach-icon2,
-        .article__our-approach-icon3,
-        .article__our-approach-icon4,
-        .article__our-approach-icon5 {
-            .circle {
-                width: 82px;
-                height: 82px;
-                border-radius: 50%;
+            .article__our-approach_titul {
+                font-size: 24px;
             }
-            .article__our-approach-item_icon1 {
-                height: 50px;
-                margin: -70px 0px 0px -20px;
-            }
-            .article__our-approach-item_icon2 {
-                height: 50px;
-                margin: -70px 0px 0px 55px;
+            .article__our-approach-item1,
+            .article__our-approach-item2,
+            .article__our-approach-item3,
+            .article__our-approach-item4,
+            .article__our-approach-item5 {
+                font-size: 14px;
+                line-height: 26px;
             }
 
-            .article__our-approach-item_icon3 {
-                height: 50px;
-                margin: -70px 0px 0px -20px;
+            .article__our-approach-item_name {
+                font-size: 16px;
             }
-            .article__our-approach-item_icon4 {
-                height: 50px;
-                margin: -70px 0px 0px 55px;
-            }
-            .article__our-approach-item_icon5 {
-                height: 50px;
-                margin: -70px 0px 0px -20px;
+            .article__our-approach-icon1,
+            .article__our-approach-icon2,
+            .article__our-approach-icon3,
+            .article__our-approach-icon4,
+            .article__our-approach-icon5 {
+                .circle {
+                    width: 82px;
+                    height: 82px;
+                    border-radius: 50%;
+                }
+                .article__our-approach-item_icon1 {
+                    height: 50px;
+                    margin: -70px 0px 0px -20px;
+                }
+                .article__our-approach-item_icon2 {
+                    height: 50px;
+                    margin: -70px 0px 0px 55px;
+                }
+                .article__our-approach-item_icon3 {
+                    height: 50px;
+                    margin: -70px 0px 0px -20px;
+                }
+                .article__our-approach-item_icon4 {
+                    height: 50px;
+                    margin: -70px 0px 0px 55px;
+                }
+                .article__our-approach-item_icon5 {
+                    height: 50px;
+                    margin: -70px 0px 0px -20px;
+                }
             }
         }
     }
