@@ -414,11 +414,10 @@
     .our-approach .article__our-approach .article__our-approach-item_name {
       font-size: 20px;
       margin-bottom: 16px; }
-
-  .article__our-approach_idea .article__our-approach_idea-text {
+  .our-approach .article__our-approach_idea .article__our-approach_idea-text {
     width: 589px;
     font-size: 20px; }
-  .article__our-approach_idea .article__our-approach_submit {
+  .our-approach .article__our-approach_idea .article__our-approach_submit {
     width: 225px; } }
 @media (max-width: 500px) {
   .our-approach .article__our-approach {
@@ -478,27 +477,25 @@
     .our-approach .article__our-approach .article__our-approach-icon5 .article__our-approach-item_icon5 {
       height: 50px;
       margin: -70px 0px 0px -20px; }
-
-  .article__our-approach_idea {
+  .our-approach .article__our-approach_idea {
     height: 412px; }
-    .article__our-approach_idea .article__our-approach_idea-name {
+    .our-approach .article__our-approach_idea .article__our-approach_idea-name {
       font-size: 24px;
       width: 146px;
       margin: 52px 0px 16px; }
-    .article__our-approach_idea .article__our-approach_idea-text {
+    .our-approach .article__our-approach_idea .article__our-approach_idea-text {
       width: 286px;
       font-size: 18px; }
-    .article__our-approach_idea .article__our-approach_submit {
+    .our-approach .article__our-approach_idea .article__our-approach_submit {
       width: 228px;
       font-size: 16px; } }
 .technologies {
-  width: 100%; }
+  width: 100%;
+  height: 1050px; }
   .technologies .article__technologies {
     display: grid;
-    width: 100%;
-    height: 1000px;
     grid-template-columns: repeat(3, 360px);
-    grid-template-rows: 160px 50px 3px 200px 50px 3px 350px;
+    grid-template-rows: 165px 25px 3px 268px 25px 3px 288px;
     grid-template-areas: "titul . ." "name1 name2 name3" "line1 line1 line1" "text1 text2 text3" "name4 name5 name6" "line2 line2 line2" "text4 text5 text6";
     grid-column-gap: 40px;
     grid-row-gap: 24px;
@@ -507,18 +504,12 @@
     font-size: 24px;
     line-height: 32px;
     color: #3B424A; }
-    .technologies .article__technologies .article__technologies-item_line3,
-    .technologies .article__technologies .article__technologies-item_line4,
-    .technologies .article__technologies .article__technologies-item_line5,
-    .technologies .article__technologies .article__technologies-item_line6 {
-      display: none; }
     .technologies .article__technologies .technologies__titul {
       grid-area: titul;
       font-weight: bold;
       font-size: 50px;
       line-height: 63px;
       color: #2C2F3C;
-      margin: 0px 0px 0px;
       align-self: end; }
     .technologies .article__technologies .article__technologies-item_name1, .technologies .article__technologies .article__technologies-item_name2, .technologies .article__technologies .article__technologies-item_name3, .technologies .article__technologies .article__technologies-item_name4, .technologies .article__technologies .article__technologies-item_name5, .technologies .article__technologies .article__technologies-item_name6 {
       font-weight: bold;
@@ -530,22 +521,21 @@
       grid-area: name1; }
     .technologies .article__technologies .article__technologies-item_text1 {
       grid-area: text1; }
-    .technologies .article__technologies .article__technologies-item_line1, .technologies .article__technologies .article__technologies-item_line2, .technologies .article__technologies .article__technologies-item_line3, .technologies .article__technologies .article__technologies-item_line4, .technologies .article__technologies .article__technologies-item_line5, .technologies .article__technologies .article__technologies-item_line6 {
+    .technologies .article__technologies .article__technologies-item_line1, .technologies .article__technologies .article__technologies-item_line2, .technologies .article__technologies .article__technologies-item_line3,
+    .technologies .article__technologies .article__technologies-item_line4,
+    .technologies .article__technologies .article__technologies-item_line5,
+    .technologies .article__technologies .article__technologies-item_line6 {
       background: #E75A7C;
-      width: 100%;
       border-radius: 3px; }
     .technologies .article__technologies .article__technologies-item_line1 {
       grid-area: line1; }
     .technologies .article__technologies .article__technologies-item_line2 {
       grid-area: line2; }
-    .technologies .article__technologies .article__technologies-item_line3 {
-      grid-area: line3; }
-    .technologies .article__technologies .article__technologies-item_line4 {
-      grid-area: line4; }
-    .technologies .article__technologies .article__technologies-item_line5 {
-      grid-area: line5; }
+    .technologies .article__technologies .article__technologies-item_line3,
+    .technologies .article__technologies .article__technologies-item_line4,
+    .technologies .article__technologies .article__technologies-item_line5,
     .technologies .article__technologies .article__technologies-item_line6 {
-      grid-area: line6; }
+      display: none; }
     .technologies .article__technologies .article__technologies-item_name2 {
       grid-area: name2; }
     .technologies .article__technologies .article__technologies-item_name3 {
@@ -573,108 +563,108 @@
 @media (max-width: 980px) {
   .technologies {
     width: 100%;
-    height: 1100px; }
-
-  .article__technologies {
-    display: grid;
-    grid-template-columns: repeat(2, 360px);
-    grid-template-rows: 200px 35px 3px 190px  35px 3px 256px 35px 3px 300px;
-    grid-template-areas: "titul . " "name1 name2" "line1 line1" "text1 text2" "name3 name4" "line2 line2" "text3 text4" "name5 name6" "line3 line3" "text5 text6";
-    grid-column-gap: 20px;
-    grid-row-gap: 12px;
-    height: 100%;
-    font-weight: 300;
-    font-size: 20px;
-    color: #3B424A;
-    margin: 0px 123px 100px; }
-    .article__technologies .article__technologies-item_line3 {
-      display: block; }
-    .article__technologies .technologies__titul {
-      font-size: 50px;
-      line-height: 60px;
-      margin: 100px 0px 0px; }
-    .article__technologies .article__technologies-item_name1,
-    .article__technologies .article__technologies-item_name2,
-    .article__technologies .article__technologies-item_name3,
-    .article__technologies .article__technologies-item_name4,
-    .article__technologies .article__technologies-item_name5,
-    .article__technologies .article__technologies-item_name6 {
-      font-size: 24px; } }
+    height: 1200px; }
+    .technologies .article__technologies {
+      display: grid;
+      grid-template-columns: repeat(2, 360px);
+      grid-template-rows: 236px 35px 3px 190px  35px 3px 256px 35px 3px 250px;
+      grid-template-areas: "titul . " "name1 name2" "line1 line1" "text1 text2" "name3 name4" "line2 line2" "text3 text4" "name5 name6" "line3 line3" "text5 text6";
+      grid-column-gap: 20px;
+      grid-row-gap: 12px;
+      height: 100%;
+      font-weight: 300;
+      font-size: 20px;
+      color: #3B424A; }
+      .technologies .article__technologies .article__technologies-item_line3 {
+        display: block;
+        grid-area: line3; }
+      .technologies .article__technologies .technologies__titul {
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 48px; }
+      .technologies .article__technologies .article__technologies-item_name1,
+      .technologies .article__technologies .article__technologies-item_name2,
+      .technologies .article__technologies .article__technologies-item_name3,
+      .technologies .article__technologies .article__technologies-item_name4,
+      .technologies .article__technologies .article__technologies-item_name5,
+      .technologies .article__technologies .article__technologies-item_name6 {
+        font-size: 24px; } }
 @media (max-width: 768px) {
   .technologies {
     width: 100%;
     height: 1270px; }
-
-  .article__technologies {
-    display: grid;
-    grid-template-columns: repeat(2, 370px);
-    grid-template-rows: 180px 35px 3px 230px 35px 3px 310px 35px 3px 300px;
-    grid-column-gap: 33px;
-    grid-row-gap: 12px;
-    height: 100%;
-    font-weight: 300;
-    color: #3B424A;
-    margin: 0px 88px 72px; }
-    .article__technologies .technologies__titul {
-      font-size: 48px;
-      margin: 72px 0px 0px; }
-    .article__technologies .article__technologies-item_name1,
-    .article__technologies .article__technologies-item_name2,
-    .article__technologies .article__technologies-item_name3,
-    .article__technologies .article__technologies-item_name4,
-    .article__technologies .article__technologies-item_name5,
-    .article__technologies .article__technologies-item_name6 {
-      font-size: 20px; } }
+    .technologies .article__technologies {
+      display: grid;
+      grid-template-columns: repeat(2, 370px);
+      grid-template-rows: 176px 35px 3px 230px 35px 3px 300px 35px 3px 270px;
+      grid-column-gap: 33px;
+      grid-row-gap: 12px;
+      height: 100%;
+      font-weight: 300;
+      color: #3B424A; }
+      .technologies .article__technologies .technologies__titul {
+        font-size: 48px;
+        margin-bottom: 45px; }
+      .technologies .article__technologies .article__technologies-item_name1,
+      .technologies .article__technologies .article__technologies-item_name2,
+      .technologies .article__technologies .article__technologies-item_name3,
+      .technologies .article__technologies .article__technologies-item_name4,
+      .technologies .article__technologies .article__technologies-item_name5,
+      .technologies .article__technologies .article__technologies-item_name6 {
+        font-size: 20px; } }
 @media (max-width: 500px) {
   .technologies {
     width: 100%;
-    height: 1200px; }
-
-  .article__technologies {
-    display: grid;
-    grid-template-columns: repeat(1, 285px);
-    grid-template-rows: 35px 35px 3px 78px 35px 3px 104px 35px 3px 52px 35px 3px 182px 35px 3px 130px 35px 3px 52px;
-    grid-template-areas: "titul" "name1" "line1" "text1" "name2" "line2" "text2" "name3" "line3" "text3" "name4" "line4" "text4" "name5" "line5" "text5" "name6" "line6" "text6";
-    grid-column-gap: 33px;
-    grid-row-gap: 16px;
-    height: 100%;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 26px;
-    color: #3B424A;
-    margin: 36px 44px; }
-    .article__technologies .article__technologies-item_line4,
-    .article__technologies .article__technologies-item_line5,
-    .article__technologies .article__technologies-item_line6 {
-      display: block; }
-    .article__technologies .technologies__titul {
-      font-size: 28px;
-      line-height: 35px;
-      margin: 0; }
-    .article__technologies .article__technologies-item_name1,
-    .article__technologies .article__technologies-item_name2,
-    .article__technologies .article__technologies-item_name3,
-    .article__technologies .article__technologies-item_name4,
-    .article__technologies .article__technologies-item_name5,
-    .article__technologies .article__technologies-item_name6 {
-      font-size: 18px;
-      line-height: 23px; } }
+    height: 1260px; }
+    .technologies .article__technologies {
+      display: grid;
+      grid-template-columns: repeat(1, 285px);
+      grid-template-rows: 86px 35px 3px 78px 35px 3px 104px 35px 3px 52px 35px 3px 182px 35px 3px 130px 35px 3px 52px;
+      grid-template-areas: "titul" "name1" "line1" "text1" "name2" "line2" "text2" "name3" "line3" "text3" "name4" "line4" "text4" "name5" "line5" "text5" "name6" "line6" "text6";
+      grid-row-gap: 15px;
+      height: 100%;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 26px;
+      color: #3B424A; }
+      .technologies .article__technologies .article__technologies-item_line4 {
+        grid-area: line4;
+        display: block; }
+      .technologies .article__technologies .article__technologies-item_line5 {
+        grid-area: line5;
+        display: block; }
+      .technologies .article__technologies .article__technologies-item_line6 {
+        grid-area: line6;
+        display: block; }
+      .technologies .article__technologies .technologies__titul {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 16px; }
+      .technologies .article__technologies .article__technologies-item_name1,
+      .technologies .article__technologies .article__technologies-item_name2,
+      .technologies .article__technologies .article__technologies-item_name3,
+      .technologies .article__technologies .article__technologies-item_name4,
+      .technologies .article__technologies .article__technologies-item_name5,
+      .technologies .article__technologies .article__technologies-item_name6 {
+        font-size: 18px;
+        line-height: 23px; } }
 .projects {
   width: 100%;
+  height: 1282px;
   background: #F2F3F7; }
   .projects .article__projects {
     width: 100%;
-    height: 1282px;
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    grid-template-rows: 100px 440px 440px;
+    grid-template-rows: 215px 440px 440px;
     grid-template-areas: "titul . ." "item1 item2 item3" "item4 item5 item6";
     grid-column-gap: 40px;
-    grid-row-gap: 20px;
+    grid-row-gap: 40px;
     justify-content: center;
     align-content: center; }
     .projects .article__projects .projects__titul {
       grid-area: titul;
+      align-self: end;
       font-weight: bold;
       font-size: 50px;
       line-height: 63px;
@@ -722,72 +712,76 @@
 
 @media (max-width: 980px) {
   .projects {
-    width: 100%; }
+    width: 100%;
+    height: 962px; }
     .projects .article__projects {
-      height: 962px;
       grid-template-columns: repeat(3, 295px);
-      grid-template-rows: 100px 360px 360px;
+      grid-template-rows: 112px 360px 360px;
       grid-column-gap: 18px;
       grid-row-gap: 18px; }
       .projects .article__projects .projects__titul {
         font-size: 48px;
         line-height: 60px;
-        margin: 5px 0px 6px; }
+        margin-bottom: 16px; }
       .projects .article__projects .article__projects_item1 .article__projects_item1-block1 .article__projects_item1-block1_text1, .projects .article__projects .article__projects_item2 .article__projects_item2-block2 .article__projects_item2-block2_text1, .projects .article__projects .article__projects_item3 .article__projects_item3-block3 .article__projects_item3-block3_text1, .projects .article__projects .article__projects_item4 .article__projects_item4-block4 .article__projects_item4-block4_text1, .projects .article__projects .article__projects_item5 .article__projects_item5-block5 .article__projects_item5-block5_text1, .projects .article__projects .article__projects_item6 .article__projects_item6-block6 .article__projects_item6-block6_text1 {
         font-size: 24px;
         font-weight: bold;
-        margin: 270px 24px 4px; }
+        margin: 280px 24px 4px; }
       .projects .article__projects .article__projects_item1 .article__projects_item1-block1 .article__projects_item1-block1_text2, .projects .article__projects .article__projects_item2 .article__projects_item2-block2 .article__projects_item2-block2_text2, .projects .article__projects .article__projects_item3 .article__projects_item3-block3 .article__projects_item3-block3_text2, .projects .article__projects .article__projects_item4 .article__projects_item4-block4 .article__projects_item4-block4_text2, .projects .article__projects .article__projects_item5 .article__projects_item5-block5 .article__projects_item5-block5_text2, .projects .article__projects .article__projects_item6 .article__projects_item6-block6 .article__projects_item6-block6_text2 {
         font-size: 16px;
         margin: 4px 24px 0px; } }
 @media (max-width: 768px) {
   .projects {
-    width: 100%; }
+    width: 100%;
+    height: 1326px; }
     .projects .article__projects {
       display: grid;
       grid-template-columns: repeat(2, 285px);
-      grid-template-rows: 100px 350px 350px 350px;
-      height: 1326px;
+      grid-template-rows: 120px 350px 350px 350px;
       grid-template-areas: "titul . " "item1 item2" "item3 item4" "item5 item6";
       grid-column-gap: 40px;
       grid-row-gap: 20px;
-      justify-content: center;
-      margin: 0px 0px 115px; }
+      justify-content: center; }
       .projects .article__projects .projects__titul {
-        margin: 5px 0px 16px; } }
+        margin-bottom: 18px; } }
 @media (max-width: 500px) {
   .projects {
-    width: 100%; }
+    width: 100%;
+    height: 2309px; }
     .projects .article__projects {
       width: 100%;
       display: grid;
       grid-template-columns: repeat(1, 285px);
-      grid-template-rows: 100px 350px 350px 350px;
+      grid-template-rows: 61px 350px 350px 350px;
       height: 2309px;
       grid-template-areas: "titul" "item1"  "item2" "item3" "item4" "item5" "item6";
       grid-column-gap: 40px;
       grid-row-gap: 20px;
-      justify-content: center;
-      margin: 0px 0px 115px; }
+      justify-content: center; }
       .projects .article__projects .projects__titul {
-        margin: 5px 0px 16px; } }
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 0; } }
 .footer {
-  display: flex;
   width: 100%;
   height: 744px;
-  background: #4D636F;
-  color: white;
+  display: grid;
+  grid-template-columns: 500px 140px;
+  grid-template-rows: 620px;
+  grid-template-areas: "form contact";
+  grid-column-gap: 160px;
   justify-content: center;
-  align-items: center;
-  box-sizing: border-box; }
+  align-content: center;
+  background: #4D636F;
+  color: white; }
   .footer .footer__contacts-form {
-    height: 500px;
-    display: flex;
-    flex-direction: column; }
+    grid-area: form;
+    height: 580px; }
     .footer .footer__contacts-form .footer__contacts {
       font-size: 50px;
       line-height: 63px;
-      font-weight: 900; }
+      font-weight: 900;
+      margin-bottom: 18px; }
     .footer .footer__contacts-form .footer__contacts-item {
       width: 472px;
       height: 54px;
@@ -822,13 +816,13 @@
         box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2); }
     .footer .footer__contacts-form .footer__contacts_button-submit {
       width: 500px;
+      height: 48px;
       background: #E75A7C;
       border-radius: 6px;
       border: none;
       color: white;
       font-size: 16px;
-      margin-top: 30px;
-      padding: 19px 24px; }
+      margin-top: 18px; }
       .footer .footer__contacts-form .footer__contacts_button-submit:hover {
         background: #FA89A4;
         box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2); }
@@ -841,11 +835,7 @@
         box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
         border: none; }
   .footer .footer__our-contacts {
-    widows: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 160px; }
+    grid-area: contact; }
     .footer .footer__our-contacts .footer__our-contacts-list1,
     .footer .footer__our-contacts .footer__our-contacts-list2 {
       width: 137px;
@@ -856,69 +846,73 @@
       .footer .footer__our-contacts .footer__our-contacts-list1 .footer__our-contacts-titul,
       .footer .footer__our-contacts .footer__our-contacts-list2 .footer__our-contacts-titul {
         font-size: 24px;
-        line-height: 30px; }
+        line-height: 30px;
+        margin-top: 100px; }
       .footer .footer__our-contacts .footer__our-contacts-list1 .footer__our-contacts-office,
       .footer .footer__our-contacts .footer__our-contacts-list2 .footer__our-contacts-office {
         font-weight: 900;
         font-size: 18px;
-        margin-bottom: 24px; }
+        margin: 32px 0px; }
       .footer .footer__our-contacts .footer__our-contacts-list1 .footer__our-contacts-info,
       .footer .footer__our-contacts .footer__our-contacts-list2 .footer__our-contacts-info {
         margin: 0; }
 
 @media (max-width: 980px) {
-  .footer .footer__our-contacts {
-    margin-left: 100px; } }
+  .footer {
+    grid-column-gap: 100px; } }
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column;
     width: 100%;
-    height: 1000px; }
-    .footer .footer__contacts-form {
-      width: 590px; }
-      .footer .footer__contacts-form .footer__contacts {
-        font-size: 50px;
-        line-height: 63px; }
-      .footer .footer__contacts-form .footer__contacts-item {
-        width: 560px;
-        font-size: 14px;
-        margin-top: 30px; }
-      .footer .footer__contacts-form .footer__contacts-item1 {
-        width: 560px;
-        background: #F2F3F7;
-        border-radius: 4px;
-        font-size: 14px; }
-      .footer .footer__contacts-form .footer__contacts_button-submit {
-        width: 590px;
-        font-size: 16px;
-        margin-top: 30px;
-        padding: 19px 24px; }
+    height: 1000px;
+    grid-template-columns: repeat(1, 590px);
+    grid-template-areas: "form" "contact";
+    grid-row-gap: 30px;
+    justify-content: center;
+    align-content: center;
+    background: #4D636F;
+    color: white; }
+    .footer .footer__contacts-form .footer__contacts {
+      font-size: 50px;
+      line-height: 63px; }
+    .footer .footer__contacts-form .footer__contacts-item {
+      width: 560px;
+      font-size: 14px;
+      margin-top: 30px; }
+    .footer .footer__contacts-form .footer__contacts-item1 {
+      width: 560px;
+      background: #F2F3F7;
+      border-radius: 4px;
+      font-size: 14px; }
+    .footer .footer__contacts-form .footer__contacts_button-submit {
+      width: 590px;
+      font-size: 16px;
+      margin-top: 30px;
+      padding: 19px 24px; }
     .footer .footer__our-contacts {
-      flex-direction: row;
-      margin: 0; }
-      .footer .footer__our-contacts .footer__our-contacts-list1 {
-        padding: 0; }
-        .footer .footer__our-contacts .footer__our-contacts-list1 .footer__our-contacts-titul {
-          font-weight: 900;
-          font-size: 24px; }
+      display: flex;
+      align-items: flex-end; }
+      .footer .footer__our-contacts .footer__our-contacts-list1 .footer__our-contacts-titul {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0; }
       .footer .footer__our-contacts .footer__our-contacts-list2 {
-        padding: 0; } }
+        margin-left: 180px; } }
 @media (max-width: 500px) {
   .footer {
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
     height: 941px;
-    padding: 0; }
+    grid-template-columns: repeat(1, 290px);
+    grid-template-rows: 490px; }
     .footer .footer__contacts-form {
-      width: 262px;
-      justify-content: center; }
+      width: 262px; }
       .footer .footer__contacts-form .footer__contacts {
         font-size: 24px;
         line-height: 30px;
         margin-top: 30px; }
       .footer .footer__contacts-form .footer__contacts-item {
         width: 262px;
+        height: 42px;
         font-size: 14px;
         margin-top: 12px; }
       .footer .footer__contacts-form .footer__contacts-item1 {
@@ -928,26 +922,17 @@
         margin: 12px 0px 0px; }
       .footer .footer__contacts-form .footer__contacts_button-submit {
         width: 286px;
+        height: 48px;
         font-size: 16px;
-        margin-top: 12px;
+        margin-top: 18px;
         padding: 19px 24px; }
     .footer .footer__our-contacts {
       flex-direction: column;
-      justify-content: start;
+      align-items: flex-start;
       text-align: left;
       margin-top: 20px;
       padding: 0; }
-      .footer .footer__our-contacts .footer__our-contacts-list1 {
-        padding: 0;
-        margin: 0; }
-        .footer .footer__our-contacts .footer__our-contacts-list1 .footer__our-contacts-titul {
-          font-weight: 900;
-          font-size: 24px;
-          line-height: 30px;
-          margin: 0;
-          margin-bottom: 12px; }
       .footer .footer__our-contacts .footer__our-contacts-list2 {
-        padding: 0;
-        margin: 0px; } }
+        margin-left: 0px; } }
 
 /*# sourceMappingURL=style.css.map */

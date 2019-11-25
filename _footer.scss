@@ -1,22 +1,26 @@
 .footer {
-    display: flex;
     width: 100%;
     height: 744px;
+    display: grid;
+    grid-template-columns: 500px 140px;
+    grid-template-rows: 620px;
+    grid-template-areas: 
+    "form contact";
+    grid-column-gap: 160px;
+    justify-content: center;
+    align-content: center;
     background: #4D636F;
     color: white;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
 
     .footer__contacts-form {
-        height: 500px;
-        display: flex;
-        flex-direction: column;
+        grid-area: form;
+        height: 580px;
 
         .footer__contacts {
             font-size: 50px;
             line-height: 63px;
             font-weight: 900;
+            margin-bottom: 18px;
         }
         .footer__contacts-item {
             width: 472px;
@@ -28,72 +32,67 @@
             color: rgba(33, 33, 33, 0.5);
             margin-top: 30px;
             padding-left: 24px;
-
+    
             &:hover {
                 background: #FEFEFE;
             }
-
+    
             &:focus {
                 background: #FEFEFE;
                 color: #000000;
                 box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
             }
         }
-            .footer__contacts-item1 {
-                width: 472px;
-                height: 139px;
-                background: #F2F3F7; 
-                border-radius: 4px;
-                font-size: 14px;
-                color: rgba(33, 33, 33, 0.5);
-                margin-top: 30px;
-                padding: 19px 0px 0px 24px;
-                resize: none;
-
-                    &:hover {
-                        background: #FEFEFE;
-                        }
+        .footer__contacts-item1 {
+            width: 472px;
+            height: 139px;
+            background: #F2F3F7; 
+            border-radius: 4px;
+            font-size: 14px;
+            color: rgba(33, 33, 33, 0.5);
+            margin-top: 30px;
+            padding: 19px 0px 0px 24px;
+            resize: none;
     
-                    &:focus {
-                        background: #FEFEFE;
-                        color: #000000;
-                        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
-                    }
-                }
-
-            .footer__contacts_button-submit {
-                width: 500px;
-                background: #E75A7C;
-                border-radius: 6px;
-                border: none;
-                color: white;
-                font-size: 16px;
-                margin-top: 30px;
-                padding: 19px 24px;
-
-                &:hover {
-                    background: #FA89A4;   
-                    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
-                }
-                &:focus {
-                    background: #E75A7C;
-                    border: 2px dashed #FFBDCD;
-                    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
-                }
-                &:active {
-                    background: #E31B4B;
-                    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
-                    border: none;
-                }
+            &:hover {
+                background: #FEFEFE;
+            }
+        
+            &:focus {
+                background: #FEFEFE;
+                color: #000000;
+                box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
             }
         }
     
+        .footer__contacts_button-submit {
+            width: 500px;
+            height: 48px;
+            background: #E75A7C;
+            border-radius: 6px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            margin-top: 18px;
+    
+            &:hover {
+                background: #FA89A4;   
+                box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
+            }
+            &:focus {
+                background: #E75A7C;
+                border: 2px dashed #FFBDCD;
+                box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
+            }
+            &:active {
+                background: #E31B4B;
+                box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
+                border: none;
+            }
+        }
+    }
     .footer__our-contacts {
-        widows: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 160px;
+        grid-area: contact;
 
         .footer__our-contacts-list1,
         .footer__our-contacts-list2 {
@@ -106,11 +105,12 @@
             .footer__our-contacts-titul {
                 font-size: 24px;
                 line-height: 30px;
+                margin-top: 100px;
             }
             .footer__our-contacts-office {
                 font-weight: 900;
                 font-size: 18px;
-                margin-bottom: 24px;
+                margin: 32px 0px;
             }
             .footer__our-contacts-info {
                 margin: 0;
@@ -120,25 +120,31 @@
 }
 @media (max-width: 980px) {
     .footer {
-
-        .footer__our-contacts {
-            margin-left: 100px;
-        }
+        grid-column-gap: 100px;
     }
 }
 @media (max-width: 768px) {
+
     .footer {
-        flex-direction: column;
         width: 100%;
         height: 1000px;
+        grid-template-columns: repeat(1, 590px);
+        grid-template-areas: 
+        "form"
+        "contact";
+        grid-row-gap: 30px;
+        justify-content: center;
+        align-content: center;
+        background: #4D636F;
+        color: white;
     
         .footer__contacts-form {
-            width: 590px;
 
             .footer__contacts {
                 font-size: 50px;
                 line-height: 63px;
             }
+            
             .footer__contacts-item {
                 width: 560px;
                 font-size: 14px;
@@ -158,45 +164,45 @@
             }
         }
         .footer__our-contacts {
-            flex-direction: row;
-            margin: 0;
+            display: flex;
+            align-items: flex-end;
 
             .footer__our-contacts-list1 {
-                padding: 0;
-            
+
                 .footer__our-contacts-titul {
                     font-weight: 900;
                     font-size: 24px;
+                    line-height: 30px;
+                    margin: 0;
                 }
             }
             .footer__our-contacts-list2 {
-                padding: 0;
+                margin-left: 180px;
             }
         }
     }
 }
 @media (max-width: 500px) {
     .footer {
-        flex-direction: column;
-        justify-content: center;
         width: 100%;
         height: 941px;
-        padding: 0;
+        grid-template-columns: repeat(1, 290px);
+        grid-template-rows: 490px;
+
     
         .footer__contacts-form {
             width: 262px;
-            justify-content: center;
 
             .footer__contacts {
                 font-size: 24px;
                 line-height: 30px;
                 margin-top: 30px;
-
             }
             .footer__contacts-item {
-            width: 262px;
-            font-size: 14px;
-            margin-top: 12px;
+                width: 262px;
+                height: 42px;
+                font-size: 14px;
+                margin-top: 12px;
             }
             .footer__contacts-item1 {
                 width: 262px;
@@ -206,32 +212,21 @@
             }
             .footer__contacts_button-submit {
                 width: 286px;
+                height: 48px;
                 font-size: 16px;
-                margin-top: 12px;
+                margin-top: 18px;
                 padding: 19px 24px;
             }
         }
         .footer__our-contacts {
             flex-direction: column;
-            justify-content: start;
+            align-items: flex-start;
             text-align: left;
             margin-top: 20px;
             padding: 0;
 
-            .footer__our-contacts-list1 {
-                padding: 0;
-                margin: 0;
-                .footer__our-contacts-titul {
-                    font-weight: 900;
-                    font-size: 24px;
-                    line-height: 30px;
-                    margin: 0;
-                    margin-bottom: 12px;
-                }
-            }
             .footer__our-contacts-list2 {
-                padding: 0;
-                margin: 0px;
+                margin-left: 0px;
             }
         }
     }

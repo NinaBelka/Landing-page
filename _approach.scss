@@ -207,7 +207,7 @@
             }
         }
         .article__our-approach_idea {
-
+            
             .article__our-approach_idea-text {
                 width: 833px;
             }
@@ -249,15 +249,16 @@
                 margin-bottom: 16px;
             }
         }
-    }
-    .article__our-approach_idea {
+    
+        .article__our-approach_idea {
 
-        .article__our-approach_idea-text {
-            width: 589px;
-            font-size: 20px;
-        }
-        .article__our-approach_submit {
-            width: 225px;
+            .article__our-approach_idea-text {
+                width: 589px;
+                font-size: 20px;
+            }
+            .article__our-approach_submit {
+                width: 225px;
+            }
         }
     }
 }
@@ -315,22 +316,23 @@
                 }
             }
         }
-    }
-    .article__our-approach_idea {
-        height: 412px;
+    
+        .article__our-approach_idea {
+            height: 412px;
 
-        .article__our-approach_idea-name {
-            font-size: 24px;
-            width: 146px;
-            margin: 52px 0px 16px;
-        }
-        .article__our-approach_idea-text {
-            width: 286px;
-            font-size: 18px;
-        }
-        .article__our-approach_submit {
-            width: 228px;
-            font-size: 16px;
+            .article__our-approach_idea-name {
+                font-size: 24px;
+                width: 146px;
+                margin: 52px 0px 16px;
+            }
+            .article__our-approach_idea-text {
+                width: 286px;
+                font-size: 18px;
+            }
+            .article__our-approach_submit {
+                width: 228px;
+                font-size: 16px;
+            }
         }
     }
 }
