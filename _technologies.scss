@@ -1,200 +1,186 @@
 .technologies {
+    display: grid;
     width: 100%;
     height: 1050px;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 165px 25px 3px 268px 25px 3px 300px;
+    grid-template-areas:
+        "titul . ."
+        "name1 name2 name3"
+        "line1 line1 line1"
+        "text1 text2 text3"
+        "name4 name5 name6"
+        "line2 line2 line2"
+        "text4 text5 text6";
+    grid-column-gap: 40px;
+    grid-row-gap: 24px;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #3B424A;
 
-    .article__technologies {
-        display: grid;
-        grid-template-columns: repeat(3, 360px);
-        grid-template-rows: 165px 25px 3px 268px 25px 3px 288px;
-        grid-template-areas:
-            "titul . ."
-            "name1 name2 name3"
-            "line1 line1 line1"
-            "text1 text2 text3"
-            "name4 name5 name6"
-            "line2 line2 line2"
-            "text4 text5 text6";
-        grid-column-gap: 40px;
-        grid-row-gap: 24px;
-        justify-content: center;
-        font-weight: 300;
+    .technologies__titul {
+        grid-area: titul;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 63px;
+        color: #2C2F3C;
+        align-self: end;
+    }
+
+    %item-name {
+        font-weight: bold;
         font-size: 24px;
-        line-height: 32px;
+        line-height: 30px;
         color: #3B424A;
-
-
-        .technologies__titul {
-            grid-area: titul;
-            font-weight: bold;
-            font-size: 50px;
-            line-height: 63px;
-            color: #2C2F3C;
-            align-self: end;
-        }
-
-        %item-name {
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 30px;
-            color: #3B424A;
-            margin: 0;
-        }
+        margin: 0;
+    }
         
-        .article__technologies-item_name1{
-            grid-area: name1;
-            @extend %item-name;
-        }
-        .article__technologies-item_text1 {
-            grid-area: text1;
-        }
-        %item-line {
-            background: #E75A7C;
-            border-radius: 3px;
-        }
-        .article__technologies-item_line1 {
-            grid-area: line1;
-            @extend %item-line;
-        }
-        .article__technologies-item_line2 {
-            grid-area: line2;
-            @extend %item-line;
-        }
-        .article__technologies-item_line3,
-        .article__technologies-item_line4,
-        .article__technologies-item_line5,
-        .article__technologies-item_line6 {
-            @extend %item-line;
-            display: none;
-        }
-        .article__technologies-item_name2 {
-            grid-area: name2;
-            @extend %item-name;
-        }
-        .article__technologies-item_name3 {
-            grid-area: name3;
-            @extend %item-name;
-        }
-        .article__technologies-item_name4 {
-            grid-area: name4;
-            @extend %item-name;
-        }
-        .article__technologies-item_name5 {
-            grid-area: name5;
-            @extend %item-name;
-        }
-        .article__technologies-item_name6 {
-            grid-area: name6;
-            @extend %item-name;
-        }
-        .article__technologies-item_text2 {
-            grid-area: text2;
-        }
-        .article__technologies-item_text3 {
-            grid-area: text3;
-        }
-        .article__technologies-item_text4 {
-            grid-area: text4;
-            margin: 0;
-            .article__technologies-item_text {
+    .technologies__name1{
+        grid-area: name1;
+        @extend %item-name;
+    }
+    .technologies__text1 {
+        grid-area: text1;
+    }
+
+    %item-line {
+        background: #E75A7C;
+        border-radius: 3px;
+    }
+
+    .technologies__line1 {
+        grid-area: line1;
+        @extend %item-line;
+    }
+    .technologies__line2 {
+        grid-area: line2;
+        @extend %item-line;
+    }
+    .technologies__line3,
+    .technologies__line4,
+    .technologies__line5,
+    .technologies__line6 {
+        @extend %item-line;
+        display: none;
+    }
+    .technologies__name2 {
+        grid-area: name2;
+        @extend %item-name;
+    }
+    .technologies__name3 {
+        grid-area: name3;
+        @extend %item-name;
+    }
+    .technologies__name4 {
+        grid-area: name4;
+        @extend %item-name;
+    }
+    .technologies__name5 {
+        grid-area: name5;
+        @extend %item-name;
+    }
+    .technologies__name6 {
+        grid-area: name6;
+        @extend %item-name;
+    }
+    .technologies__text2 {
+        grid-area: text2;
+    }
+    .technologies__text3 {
+        grid-area: text3;
+    }
+    .technologies__text4 {
+        grid-area: text4;
+        margin: 0;
+        .technologies__text4-2 {
                 margin-top: 25px;
             }
         }
-        .article__technologies-item_text5 {
-            grid-area: text5;
-        }
-        .article__technologies-item_text6 {
-            grid-area: text6;
-        }
+    .technologies__text5 {
+        grid-area: text5;
+    }
+    .technologies__text6 {
+        grid-area: text6;
     }
 }
-
 @media (max-width: 980px) {
     .technologies {
+        display: grid;
         width: 100%;
         height: 1200px;
-    
-        .article__technologies {
-            display: grid;
-            grid-template-columns: repeat(2, 360px);
-            grid-template-rows: 236px 35px 3px 190px  35px 3px 256px 35px 3px 250px;
-            grid-template-areas:
-                "titul . "
-                "name1 name2"
-                "line1 line1"
-                "text1 text2"
-                "name3 name4"
-                "line2 line2"
-                "text3 text4"
-                "name5 name6"
-                "line3 line3"
-                "text5 text6";
-            grid-column-gap: 20px;
-            grid-row-gap: 12px;
-            height: 100%;
-            font-weight: 300;
-            font-size: 20px;
-            color: #3B424A;
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: 236px 35px 3px 190px  35px 3px 256px 35px 3px 250px;
+         grid-template-areas:
+            "titul . "
+            "name1 name2"
+            "line1 line1"
+            "text1 text2"
+            "name3 name4"
+            "line2 line2"
+            "text3 text4"
+            "name5 name6"
+            "line3 line3"
+            "text5 text6";
+        grid-column-gap: 20px;
+        grid-row-gap: 12px;
+        height: 100%;
+        font-weight: 300;
+        font-size: 20px;
+        color: #3B424A;
 
-            .article__technologies-item_line3 {
-                display: block;
-                grid-area: line3;
-            }
-
-            .technologies__titul {
-                font-size: 48px;
-                line-height: 60px;
-                margin-bottom: 48px;
-            }
-            .article__technologies-item_name1,
-            .article__technologies-item_name2,
-            .article__technologies-item_name3,
-            .article__technologies-item_name4,
-            .article__technologies-item_name5,
-            .article__technologies-item_name6 {
-                font-size: 24px;
-            }
+        .technologies__line3 {
+            display: block;
+            grid-area: line3;
+        }
+        .technologies__titul {
+            font-size: 48px;
+            line-height: 60px;
+            margin-bottom: 48px;
+        }
+        .technologies__name1,
+        .technologies__name2,
+        .technologies__name3,
+        .technologies__name4,
+        .technologies__name5,
+        .technologies__name6 {
+            font-size: 24px;
         }
     }
 }
 @media (max-width: 768px) {
     .technologies {
+        display: grid;
         width: 100%;
         height: 1270px;
-    
+        grid-template-columns: repeat(2, 370px);
+        grid-template-rows: 176px 35px 3px 230px 35px 3px 300px 35px 3px 270px;        grid-column-gap: 33px;
+        grid-row-gap: 12px;
+        height: 100%;
+        font-weight: 300;
+        color: #3B424A;
 
-        .article__technologies {
-            display: grid;
-            grid-template-columns: repeat(2, 370px);
-            grid-template-rows: 176px 35px 3px 230px 35px 3px 300px 35px 3px 270px;        grid-column-gap: 33px;
-            grid-row-gap: 12px;
-            height: 100%;
-            font-weight: 300;
-            color: #3B424A;
-
-            .technologies__titul {
-                font-size: 48px;
-                margin-bottom: 45px;
-            }
-            .article__technologies-item_name1,
-            .article__technologies-item_name2,
-            .article__technologies-item_name3,
-            .article__technologies-item_name4,
-            .article__technologies-item_name5,
-            .article__technologies-item_name6 {
-                font-size: 20px;
-            }
+        .technologies__titul {
+            font-size: 48px;
+            margin-bottom: 45px;
+        }
+        .technologies__name1,
+        .technologies__name2,
+        .technologies__name3,
+        .technologies__name4,
+        .technologies__name5,
+        .technologies__name6 {
+            font-size: 20px;
         }
     }
 }
 
 @media (max-width: 500px) {
     .technologies {
+        display: grid;
         width: 100%;
         height: 1260px;
-    
-    
-    .article__technologies {
-        display: grid;
         grid-template-columns: repeat(1, 285px);
         grid-template-rows: 86px 35px 3px 78px
         35px 3px 104px 35px 3px 52px 35px 3px 182px
@@ -226,15 +212,15 @@
         line-height: 26px;
         color: #3B424A;
 
-        .article__technologies-item_line4 {
+        .technologies__line4 {
         grid-area: line4;
         display: block;
         }
-        .article__technologies-item_line5 {
+        .technologies__line5 {
             grid-area: line5;
             display: block;
         }
-        .article__technologies-item_line6 {
+        .technologies__line6 {
             grid-area: line6;
             display: block;
         }
@@ -243,20 +229,14 @@
             line-height: 35px;
             margin-bottom: 16px;
         }
-        .article__technologies-item_name1,
-        .article__technologies-item_name2,
-        .article__technologies-item_name3,
-        .article__technologies-item_name4,
-        .article__technologies-item_name5,
-        .article__technologies-item_name6 {
+        .technologies__name1,
+        .technologies__name2,
+        .technologies__name3,
+        .technologies__name4,
+        .technologies__name5,
+        .technologies__name6 {
             font-size: 18px;
             line-height: 23px;
         }
     }
 }
-}
-
-
-
-
-
