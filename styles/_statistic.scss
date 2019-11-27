@@ -1,27 +1,26 @@
 .statistic {
     display: flex;
-    position: relative;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: 277px;
     background: #4D636F;
     color: white;
 
     .statistic__list {
-        position: absolute;
         list-style-type: none;
         width: 100%;
         padding: 0;
-        margin-top: 84px;
+        margin: 0;
     
         .statistic__list--item {
             float: left;
-            width: 23.5%;
-            margin-right: 1%;
             text-align: center;
             font-weight: 900;
             font-size: 50px;
             line-height: 63px;
+            width: 23.5%;
+            margin-right: 1%;
         }
         .statistic__list--item-text {
             font-weight: 300;
@@ -37,11 +36,11 @@
         height: 234px;
     
         .statistic__list {
-            margin-top: 85px;
     
             .statistic__list--item {
                 font-size: 36px;
                 line-height: 45px;
+
             }
             .statistic__list--item-text {
                 font-size: 20px;
@@ -55,15 +54,16 @@
     .statistic {
         width: 100%;
         height: 343px;
-
-        .statistic__list--items {
+        
+        .statistic__list {
             margin: 0;
-        }
-        .statistic__list--item {
-            width: 47%;
-        }
-        .statistic__list--item-text {
-            margin-bottom: 40px;
+        
+            .statistic__list--item {
+                width: 48%;
+            }
+            .statistic__list--item-text {
+                margin-bottom: 40px;
+            }
         }
     }
 }
@@ -80,11 +80,16 @@
             padding-top: 25px;
         }    
         .statistic__list--item {
+            font-weight: 900;
             font-size: 30px;
+            line-height: 38px;
+            text-align: center;
             margin: 0px 122px 0px;
         }
         .statistic__list--item-text {
+            font-weight: 300;
             font-size: 18px;
+            line-height: 23px;
             text-align: center;
             margin-bottom: 30;
         }

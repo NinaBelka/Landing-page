@@ -1,9 +1,9 @@
 .technologies {
-    display: grid;
     width: 100%;
     height: 1050px;
+    display: grid;
     grid-template-columns: repeat(3, 360px);
-    grid-template-rows: 165px 25px 3px 268px 25px 3px 300px;
+    grid-template-rows: 150px 25px 3px 268px 25px 3px 300px;
     grid-template-areas:
         "titul . ."
         "name1 name2 name3"
@@ -15,6 +15,7 @@
     grid-column-gap: 40px;
     grid-row-gap: 24px;
     justify-content: center;
+    align-content: center;
     font-weight: 300;
     font-size: 24px;
     line-height: 32px;
@@ -27,6 +28,7 @@
         line-height: 63px;
         color: #2C2F3C;
         align-self: end;
+        margin-bottom: 55px;
     }
 
     %item-name {
@@ -110,7 +112,7 @@
         display: grid;
         width: 100%;
         height: 1200px;
-        grid-template-columns: repeat(2, 360px);
+        grid-template-columns: repeat(2, 373px);
         grid-template-rows: 236px 35px 3px 190px  35px 3px 256px 35px 3px 250px;
          grid-template-areas:
             "titul . "
@@ -123,11 +125,12 @@
             "name5 name6"
             "line3 line3"
             "text5 text6";
-        grid-column-gap: 20px;
+        grid-column-gap: 18px;
         grid-row-gap: 12px;
         height: 100%;
         font-weight: 300;
         font-size: 20px;
+        line-height: 32px;
         color: #3B424A;
 
         .technologies__line3 {
@@ -145,8 +148,8 @@
         .technologies__name4,
         .technologies__name5,
         .technologies__name6 {
-            font-size: 24px;
-        }
+            font-size: 20px;
+            line-height: 25px;        }
     }
 }
 @media (max-width: 768px) {
@@ -154,8 +157,9 @@
         display: grid;
         width: 100%;
         height: 1270px;
-        grid-template-columns: repeat(2, 370px);
+        grid-template-columns: repeat(2, 295px);
         grid-template-rows: 176px 35px 3px 230px 35px 3px 300px 35px 3px 270px;        grid-column-gap: 33px;
+        grid-column-gap: 60px;
         grid-row-gap: 12px;
         height: 100%;
         font-weight: 300;
@@ -165,14 +169,6 @@
             font-size: 48px;
             margin-bottom: 45px;
         }
-        .technologies__name1,
-        .technologies__name2,
-        .technologies__name3,
-        .technologies__name4,
-        .technologies__name5,
-        .technologies__name6 {
-            font-size: 20px;
-        }
     }
 }
 
@@ -180,9 +176,9 @@
     .technologies {
         display: grid;
         width: 100%;
-        height: 1260px;
+        height: 1300px;
         grid-template-columns: repeat(1, 285px);
-        grid-template-rows: 86px 35px 3px 78px
+        grid-template-rows: 66px 35px 3px 78px
         35px 3px 104px 35px 3px 52px 35px 3px 182px
         35px 3px 130px 35px 3px 52px;
         grid-template-areas:
@@ -206,7 +202,6 @@
             "line6"
             "text6";
         grid-row-gap: 15px;
-        height: 100%;
         font-weight: 300;
         font-size: 14px;
         line-height: 26px;

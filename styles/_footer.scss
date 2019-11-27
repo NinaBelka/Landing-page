@@ -37,7 +37,6 @@
                 background: #FEFEFE;
                 cursor: pointer;
             }
-    
             &:focus {
                 background: #FEFEFE;
                 color: #000000;
@@ -59,14 +58,12 @@
                 background: #FEFEFE;
                 cursor: pointer;
             }
-        
             &:focus {
                 background: #FEFEFE;
                 color: #000000;
                 box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
             }
         }
-    
         .footer__contacts-button-submit {
             width: 500px;
             height: 48px;
@@ -85,7 +82,6 @@
             &:focus {
                 background: #E75A7C;
                 border: 2px dashed #FFBDCD;
-                box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
             }
             &:active {
                 background: #E31B4B;
@@ -108,7 +104,7 @@
             .footer__our-contacts-titul {
                 font-size: 24px;
                 line-height: 30px;
-                margin-top: 100px;
+                margin-top: 110px;
             }
             .footer__our-contacts-office {
                 font-weight: 900;
@@ -133,9 +129,9 @@
         height: 1000px;
         grid-template-columns: repeat(1, 590px);
         grid-template-areas: 
-        "form"
-        "contact";
-        grid-row-gap: 30px;
+            "form"
+            "contact";
+        grid-row-gap: 72px;
         justify-content: center;
         align-content: center;
         background: #4D636F;
@@ -147,7 +143,6 @@
                 font-size: 50px;
                 line-height: 63px;
             }
-            
             .footer__contacts-item {
                 width: 560px;
                 font-size: 14px;
@@ -163,7 +158,6 @@
                 width: 590px;
                 font-size: 16px;
                 margin-top: 30px;
-                padding: 19px 24px;
             }
         }
         .footer__our-contacts {
@@ -191,8 +185,8 @@
         height: 941px;
         grid-template-columns: repeat(1, 290px);
         grid-template-rows: 490px;
+        grid-row-gap: 32px;
 
-    
         .footer__contacts-form {
             width: 262px;
 
@@ -218,14 +212,13 @@
                 height: 48px;
                 font-size: 16px;
                 margin-top: 18px;
-                padding: 19px 24px;
             }
         }
         .footer__our-contacts {
             flex-direction: column;
             align-items: flex-start;
             text-align: left;
-            margin-top: 20px;
+            margin-top: 0;
             padding: 0;
 
             .footer__our-contacts-list2 {

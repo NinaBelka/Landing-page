@@ -1,6 +1,6 @@
 .our-approach {
     width: 100%;
-    height: 1800px;
+    height: 1860px;
     display: grid;
     grid-template-columns: repeat(2, 460px);
     grid-template-rows: 190px 250px 250px 272px 304px 250px;
@@ -12,12 +12,13 @@
         "image4 item4"
         "item5 image5";
     grid-column-gap: 40px;
-    grid-row-gap: 40px;
+    grid-row-gap: 47px;
     justify-content: center;
     justify-items: center;
     align-items: center;
     font-weight: 300;
     font-size: 24px;
+    line-height: 32px;
     color: #3B424A;
 
     .our-approach__titul {
@@ -124,7 +125,7 @@
 }
 @media (max-width: 980px) {
     .our-approach {
-        height: 1770px;
+        height: 1850px;
         grid-template-columns: repeat(3, 225px);
         grid-template-areas:
             "titul titul ."
@@ -136,6 +137,8 @@
         justify-content: center;
         justify-items: start;
         font-size: 20px;
+        line-height: 32px;
+        font-weight: 300;
 
         .our-approach__titul {
             font-size: 48px;
@@ -151,7 +154,7 @@
 }
 @media (max-width: 768px) {
     .our-approach {
-        height: 2400px;
+        height: 2500px;
         grid-template-columns: repeat(1, 589px);
         grid-template-rows: 120px 180px 160px 180px 170px 180px 200px 180px 200px 180px 170px;
         grid-template-areas:
@@ -175,15 +178,20 @@
             margin-top: 66px;
         }
         .our-approach__item-name {
+            font-weight: bold;
             font-size: 20px;
+            line-height: 25px;
             margin-bottom: 16px;
         }
     }
 }
 @media (max-width: 500px) {
     .our-approach {
+        height: 2300px;
         grid-template-columns: repeat(1, 286px);
         grid-template-rows: 100px 100px 250px 100px 250px 100px 272px 100px 304px 100px 250px;
+        grid-row-gap: 30px;
+
 
         .our-approach__titul {
             font-size: 24px;

@@ -1,7 +1,7 @@
 .idea-submit {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 412px;
@@ -11,20 +11,23 @@
     .idea-submit__name {
         font-weight: bold;
         font-size: 50px;
-        margin: 80px 0px 16px;
+        line-height: 63px;
+        margin-bottom: 34px;
     }
     .idea-submit__text {
         font-weight: 300;
         font-size: 24px;
+        line-height: 30px;
         width: 760px;
         text-align: center;
-        margin: 16px 0px 42px;
+        margin-bottom: 42px;
     }
     .idea-submit__submit {
         width: 260px;
         height: 55px;
         font-weight: bold;
         font-size: 18px;
+        line-height: 23px;
         color: white;
         background: #E75A7C;
         border-radius: 6px;
@@ -38,7 +41,6 @@
         &:focus {
             background: #E75A7C;
             border: 2px dashed #FFBDCD;
-            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
         }
         &:active {
             background: #E31B4B;
@@ -49,22 +51,27 @@
 }
 @media (max-width: 980px) {
     .idea-submit {
-                
+
+        .idea-submit__name {
+            margin-bottom: 30px;
+        }
         .idea-submit__text {
             width: 833px;
+            margin-bottom: 46px;
         }
         .idea-submit__submit {
             width: 295px;
         }
     }
 }
-
 @media (max-width: 768px) {
     .idea-submit {
 
         .idea-submit__text {
             width: 589px;
             font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 54px;
         }
         .idea-submit__submit {
             width: 225px;
@@ -73,20 +80,25 @@
 }
 @media (max-width: 500px) {
     .idea-submit {
-        height: 412px;
+        height: 304px;
 
         .idea-submit__name {
             font-size: 24px;
+            line-height: 30px;
             width: 146px;
-            margin: 52px 0px 16px;
+            margin-bottom: 16px;
         }
         .idea-submit__text {
             width: 286px;
             font-size: 18px;
+            line-height: 23px;
+            margin-bottom: 18px;
         }
         .idea-submit__submit {
             width: 228px;
+            height: 42px;
             font-size: 16px;
+            line-height: 20px;
         }
     }
 }

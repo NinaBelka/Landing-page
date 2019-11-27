@@ -4,7 +4,7 @@
     .header__nav-name {
         position: relative;
         font-size: 24px;
-        padding: 15px 40px;
+        padding: 15px 48px;
         background: #4D636F;
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
         }
@@ -31,7 +31,8 @@
         color: white;
         text-decoration: none;
         font-size: 16px;
-        margin-left: 30px;
+        line-height: 20px;
+        margin-left: 48px;
     
         &:hover {
             border-bottom: 2px solid #A1C5D9;
@@ -66,7 +67,7 @@
             position: absolute;
             width: 28px;
             height: 0px;
-            border: 0.5px solid white;
+            border: 1.5px solid white;
             background-color: white;
             top: 0;
             right: 0;
@@ -85,11 +86,11 @@
         }
     }
 .company {
+    height: 894px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-image: url(../Images/image.png);
-    height: 894px;
-    width: 100%;
     color: white;
     justify-content: center;
     align-items: center;
@@ -98,13 +99,14 @@
     display: inline-block;
     width: 500px;
     font-size: 50px;
+    line-height: 63px;
     font-weight: bold;
     padding: 0px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
 .company__text {
     display: inline-block;
-    width: 770px;
+    width: 771px;
     font-size: 24px;
     line-height: 30px;
     text-align: center;
@@ -124,13 +126,14 @@
         align-items: center;
     }
 }
-
 @media (max-width: 768px) {
     .company {
         height: 717px;
 
         .company__page {
+            font-weight: bold;
             font-size: 32px;
+            line-height: 40px;
             width: 322px;
             margin-bottom: 24px;
         }
@@ -145,15 +148,17 @@
     .company {
 
         .company__page {
+            font-weight: bold;
             font-size: 24px;
+            line-height: 30px;
             width: 345px;
             margin-bottom: 36px;
             text-align: center;
         }
         .company__text {
             font-size: 16px;
-            width: 345px;
             line-height: 28px;
+            width: 345px;
         }
     }
 }
