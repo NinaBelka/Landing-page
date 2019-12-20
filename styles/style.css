@@ -896,16 +896,14 @@
 }
 .projects .projects__item1 .projects__item1-block1 .projects__item1-block1-text1, .projects .projects__item2 .projects__item2-block2 .projects__item2-block2-text1, .projects .projects__item3 .projects__item3-block3 .projects__item3-block3-text1, .projects .projects__item4 .projects__item4-block4 .projects__item4-block4-text1, .projects .projects__item5 .projects__item5-block5 .projects__item5-block5-text1, .projects .projects__item6 .projects__item6-block6 .projects__item6-block6-text1 {
   font-size: 24px;
-  vertical-align: bottom;
   line-height: 30px;
   font-weight: bold;
-  padding: 260px 0px 8px 15px;
+  padding: 20px 0px 8px 20px;
 }
 .projects .projects__item1 .projects__item1-block1 .projects__item1-block1-text2, .projects .projects__item2 .projects__item2-block2 .projects__item2-block2-text2, .projects .projects__item3 .projects__item3-block3 .projects__item3-block3-text2, .projects .projects__item4 .projects__item4-block4 .projects__item4-block4-text2, .projects .projects__item5 .projects__item5-block5 .projects__item5-block5-text2, .projects .projects__item6 .projects__item6-block6 .projects__item6-block6-text2 {
   font-size: 16px;
-  vertical-align: bottom;
   line-height: 20px;
-  padding: 0px 0px 10px 15px;
+  padding-left: 20px;
 }
 .projects .projects__item1, .projects .projects__item2, .projects .projects__item3, .projects .projects__item4, .projects .projects__item5, .projects .projects__item6 {
   position: relative;
@@ -955,15 +953,6 @@
     line-height: 60px;
     margin-bottom: 16px;
   }
-  .projects .projects__item1 .projects__item1-block1 .projects__item1-block1-text1, .projects .projects__item2 .projects__item2-block2 .projects__item2-block2-text1, .projects .projects__item3 .projects__item3-block3 .projects__item3-block3-text1, .projects .projects__item4 .projects__item4-block4 .projects__item4-block4-text1, .projects .projects__item5 .projects__item5-block5 .projects__item5-block5-text1, .projects .projects__item6 .projects__item6-block6 .projects__item6-block6-text1 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: bold;
-  }
-  .projects .projects__item1 .projects__item1-block1 .projects__item1-block1-text2, .projects .projects__item2 .projects__item2-block2 .projects__item2-block2-text2, .projects .projects__item3 .projects__item3-block3 .projects__item3-block3-text2, .projects .projects__item4 .projects__item4-block4 .projects__item4-block4-text2, .projects .projects__item5 .projects__item5-block5 .projects__item5-block5-text2, .projects .projects__item6 .projects__item6-block6 .projects__item6-block6-text2 {
-    font-size: 16px;
-    line-height: 20px;
-  }
 }
 @media (max-width: 768px) {
   .projects {
@@ -979,11 +968,6 @@
   }
   .projects .projects__title {
     margin-bottom: 18px;
-  }
-  .projects .projects__item1 .projects__item1-block1 .projects__item1-block1-text1, .projects .projects__item2 .projects__item2-block2 .projects__item2-block2-text1, .projects .projects__item3 .projects__item3-block3 .projects__item3-block3-text1, .projects .projects__item4 .projects__item4-block4 .projects__item4-block4-text1, .projects .projects__item5 .projects__item5-block5 .projects__item5-block5-text1, .projects .projects__item6 .projects__item6-block6 .projects__item6-block6-text1 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: bold;
   }
 }
 @media (max-width: 500px) {
@@ -1002,11 +986,6 @@
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 0;
-  }
-  .projects .projects__item1 .projects__item1-block1 .projects__item1-block1-text1, .projects .projects__item2 .projects__item2-block2 .projects__item2-block2-text1, .projects .projects__item3 .projects__item3-block3 .projects__item3-block3-text1, .projects .projects__item4 .projects__item4-block4 .projects__item4-block4-text1, .projects .projects__item5 .projects__item5-block5 .projects__item5-block5-text1, .projects .projects__item6 .projects__item6-block6 .projects__item6-block6-text1 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: bold;
   }
 }
 .footer {

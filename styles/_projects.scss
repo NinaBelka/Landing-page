@@ -42,16 +42,15 @@
     }
     %block-text1 {
         font-size: 24px;
-        vertical-align: bottom;
         line-height: 30px;
         font-weight: bold;
-        padding: 260px 0px 8px 15px;
+        padding: 20px 0px 8px 20px;
     }
     %block-text2 {
         font-size: 16px;
-        vertical-align: bottom;
         line-height: 20px;
-        padding: 0px 0px 10px 15px;    }
+        padding-left: 20px;    
+    }
     %item {
         position: relative;
         overflow: hidden;
@@ -192,16 +191,6 @@
             line-height: 60px;
             margin-bottom: 16px;
         }
-
-        %block-text1 {
-            font-size: 24px;
-            line-height: 30px;
-            font-weight: bold;
-        }
-        %block-text2 {
-            font-size: 16px;
-            line-height: 20px;
-        }
     }
 }
 @media (max-width: 768px) {
@@ -220,11 +209,6 @@
 
         .projects__title {
             margin-bottom: 18px;
-        }
-        %block-text1 {
-            font-size: 24px;
-            line-height: 30px;
-            font-weight: bold;
         }
     }
 }
@@ -249,11 +233,6 @@
             font-size: 24px;
             line-height: 30px;
             margin-bottom: 0;
-        }
-        %block-text1 {
-            font-size: 24px;
-            line-height: 30px;
-            font-weight: bold;
         }
     }
 }
