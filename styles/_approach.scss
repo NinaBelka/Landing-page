@@ -1,11 +1,10 @@
 .our-approach {
     width: 100%;
-    height: 1860px;
     display: grid;
-    grid-template-columns: repeat(2, 460px);
-    grid-template-rows: 190px 250px 250px 272px 304px 250px;
+    grid-template-columns: repeat(2, min-max(450px, 460px));
+    grid-template-rows: auto;
     grid-template-areas:
-        "titul ."
+        "title ."
         "item1 image1"
         "image2 item2"
         "item3 image3"
@@ -20,14 +19,14 @@
     font-size: 24px;
     line-height: 32px;
     color: #3B424A;
+    padding: 126px 140px;
 
-    .our-approach__titul {
-        grid-area: titul;
+    .our-approach__title {
+        grid-area: title;
         font-weight: bold;
         font-size: 50px;
         line-height: 63px;
         color: #3B424A;
-        margin-top: 126px;
         align-self: start;
         justify-self: start;
     }
@@ -125,10 +124,9 @@
 }
 @media (max-width: 980px) {
     .our-approach {
-        height: 1850px;
-        grid-template-columns: repeat(3, 225px);
+        grid-template-columns: repeat(3, minmax(200px, 225px));
         grid-template-areas:
-            "titul titul ."
+            "title title ."
             "item1 item1 image1"
             "image2 item2 item2"
             "item3 item3 image3"
@@ -139,11 +137,11 @@
         font-size: 20px;
         line-height: 32px;
         font-weight: 300;
+        padding: 111px 108px;
 
-        .our-approach__titul {
+        .our-approach__title {
             font-size: 48px;
             line-height: 60px;
-            margin-top: 112px;
         }
         .our-approach__img1, 
         .our-approach__img3,
@@ -154,11 +152,9 @@
 }
 @media (max-width: 768px) {
     .our-approach {
-        height: 2500px;
-        grid-template-columns: repeat(1, 589px);
-        grid-template-rows: 120px 180px 160px 180px 170px 180px 200px 180px 200px 180px 170px;
+        grid-template-columns: auto;
         grid-template-areas:
-            "titul"
+            "title"
             "image1"
             "item1"
             "image2"
@@ -171,11 +167,11 @@
             "item5";
         justify-content: center;
         justify-items: center;
+        padding: 65px 89px;
 
-        .our-approach__titul {
+        .our-approach__title {
             font-size: 36px;
             line-height: 45px;
-            margin-top: 66px;
         }
         .our-approach__item-name {
             font-weight: bold;
@@ -187,13 +183,13 @@
 }
 @media (max-width: 500px) {
     .our-approach {
-        height: 2300px;
-        grid-template-columns: repeat(1, 286px);
-        grid-template-rows: 100px 100px 250px 100px 250px 100px 272px 100px 304px 100px 250px;
-        grid-row-gap: 30px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-row-gap: 15px;
+        padding: 48px 45px;
 
 
-        .our-approach__titul {
+        .our-approach__title {
             font-size: 24px;
         }
         .our-approach__item1,

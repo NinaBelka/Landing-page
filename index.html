@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
     <title> Landing-page Компании </title>
 </head>
 <body>
@@ -12,6 +13,8 @@
         <div class="header__nav-name"> COMPANY NAME </div>
         <nav class="header-nav">
             <ul class="header__nav-list"> 
+                <div class="header__close-icon"><i class="fa fa-close"></i></div>
+
                 <li class="header__nav-item">
                     <a class="header__nav-item-link" href="#what-we-do"> What we do </a>
                 </li>
@@ -28,20 +31,8 @@
                     <a class="header__nav-item-link" href="#contacts"> Contacts </a>
                 </li>
             </ul>
-            <ul class="heder__nav-icon-menu">
-                <li class="heder__nav-icon">
-                    <div class="heder__nav-icon1"> </div> 
-                </li>
-                <li class="heder__nav-icon">
-                    <div class="heder__nav-icon2"> </div> 
-                </li>
-                <li class="heder__nav-icon">
-                    <div class="heder__nav-icon3"> </div> 
-                </li>
-            </ul>
+            <div class="header__menu-icon"><i class="fa fa-bars"></i></div>
         </nav>
-    </header>
-    <main>
         <section class="company">
             <div class="company__page"> Company landing page </div>
 
@@ -51,9 +42,10 @@
                 dolorum.
             </div>
         </section>
-
+    </header>
+    <main>
         <section class="what-we-do">
-            <h2 class="what-we-do__titul" id="what-we-do"> What we do </h2>
+            <h2 class="what-we-do__title" id="what-we-do"> What we do </h2>
             <div class="what-we-do__text"> 
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Aut pariatur facere quas? Optio animi ab quibusdam qui. 
@@ -67,27 +59,27 @@
 
         <Section class="statistic">
             <ul class="statistic__list">
-                <li class="statistic__list--item"> 7&plus; 
-                    <p class="statistic__list--item-text"> Partners 
+                <li class="statistic__list-item"> 7&plus; 
+                    <p class="statistic__list-item-text"> Partners 
                     </p> 
                 </li>
-                <li class="statistic__list--item"> 50&plus;
-                    <p class="statistic__list--item-text"> Employees 
+                <li class="statistic__list-item"> 50&plus;
+                    <p class="statistic__list-item-text"> Employees 
                     </p> 
                 </li>
-                <li class="statistic__list--item"> &#36;100&#44;000&plus; 
-                    <p class="statistic__list--item-text"> Profit 
+                <li class="statistic__list-item"> &#36;100&#44;000&plus; 
+                    <p class="statistic__list-item-text"> Profit 
                     </p>
                 </li>
-                <li class="statistic__list--item"> 30&plus; 
-                    <p class="statistic__list--item-text"> Meetings
+                <li class="statistic__list-item"> 30&plus; 
+                    <p class="statistic__list-item-text"> Meetings
                     </p> 
                 </li>
             </ul>
         </Section>
 
         <section class="our-approach">
-            <h2 class="our-approach__titul" id="our-approach"> 
+            <h2 class="our-approach__title" id="our-approach"> 
                 Our-approach 
             </h2>
             <div class="our-approach__item1">
@@ -107,13 +99,15 @@
             <div class="our-approach__img1">
                 <div class="circle"></div>
                 <img class="our-approach__img1-icon"
-                     src="icons/Icon1.svg" alt="Icon" />
+                     src="icons/Icon1.svg" 
+                     alt="Icon for Changed Welcome by organisation block" />
             </div>
 
             <div class="our-approach__img2">
                 <div class="circle"></div>
                 <img class="our-approach__img2-icon" 
-                     src="icons/Icon2.svg" alt="Icon" />
+                     src="icons/Icon2.svg" 
+                     alt="Icon for Maintaiming the brand focus block" />
             </div>
 
             <div class="our-approach__item2">
@@ -147,13 +141,15 @@
             <div class="our-approach__img3">
                 <div class="circle"></div>
                 <img class="our-approach__img3-icon" 
-                     src="icons/Icon3.svg" alt="Icon" />
+                     src="icons/Icon3.svg" 
+                     alt="Icon for Expertise and talent block" />
             </div>
 
             <div class="our-approach__img4">
                 <div class="circle"></div>
                 <img class="our-approach__img4-icon"
-                     src="icons/Icon4.svg" alt="Icon" />
+                     src="icons/Icon4.svg" 
+                     alt="Icon for Pragmatic and proven methods block" />
             </div>
 
             <div class="our-approach__item4">
@@ -187,7 +183,8 @@
             <div class="our-approach__img5">
                 <div class="circle"></div>
                 <img class="our-approach__img5-icon"
-                     src="icons/Icon5.svg" alt="Icon" />
+                     src="icons/Icon5.svg" 
+                     alt="Icon for Corporate communications block" />
             </div>
         </section>
 
@@ -204,7 +201,7 @@
         </section>
 
         <section class="technologies">
-            <h2 class="technologies__titul" id="technologies"> Technologies 
+            <h2 class="technologies__title" id="technologies"> Technologies 
             </h2>
             <h3 class="technologies__name1"> 
                 Software development 
@@ -284,7 +281,7 @@
         </section>
 
         <section class="projects">
-            <h2 class="projects__titul" id="projects"> Projects 
+            <h2 class="projects__title" id="projects"> Projects 
             </h2>
             <div class="projects__item1">
                 <img class="projects__img" src="images/image1.png" alt="Projects photo" />
@@ -372,7 +369,7 @@
         </form>
         <section class="footer__our-contacts">
             <div class="footer__our-contacts-list1"> 
-                <h3 class="footer__our-contacts-titul"> Our contacts 
+                <h3 class="footer__our-contacts-title"> Our contacts 
                 </h3>
                 <p class="footer__our-contacts-office"> Office 1 </p>
                 <p class="footer__our-contacts-info"> Country </p>
@@ -390,5 +387,6 @@
             </div>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

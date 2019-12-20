@@ -1,21 +1,21 @@
 .projects {
     width: 100%;
-    height: 1245px;
     background: #F2F3F7;
     display: grid;
-    grid-template-columns: repeat(3, 360px);
-    grid-template-rows: 80px 440px 440px;
+    grid-template-columns: repeat(3, minmax(285px, 360px));
+    grid-template-rows: auto;
     grid-template-areas: 
-        "titul . ."
+        "title title title"
         "item1 item2 item3"
         "item4 item5 item6";
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     justify-content: center;
     align-content: center;
+    padding: 115px 80px;
 
-    .projects__titul {
-        grid-area: titul;
+    .projects__title {
+        grid-area: title;
         align-self: end;
         font-weight: bold;
         font-size: 50px;
@@ -42,15 +42,16 @@
     }
     %block-text1 {
         font-size: 24px;
+        vertical-align: bottom;
         line-height: 30px;
         font-weight: bold;
-        margin: 360px 24px 4px;
+        padding: 260px 0px 8px 15px;
     }
     %block-text2 {
         font-size: 16px;
+        vertical-align: bottom;
         line-height: 20px;
-        margin: 4px 24px 0px;
-    }
+        padding: 0px 0px 10px 15px;    }
     %item {
         position: relative;
         overflow: hidden;
@@ -64,10 +65,10 @@
     .projects__item1 {
         grid-area: item1;
         @extend %item;
+        cursor: pointer;
             
         &:hover .projects__item1-block1 {
             @extend %hover;
-            cursor: pointer;
         }
         .projects__item1-block1 {
             @extend %item-block;
@@ -84,10 +85,10 @@
     .projects__item2 {
         grid-area: item2;
         @extend %item;
+        cursor: pointer;
             
         &:hover .projects__item2-block2 {
             @extend %hover;
-            cursor: pointer;
         }
         .projects__item2-block2 {
             @extend %item-block;
@@ -103,10 +104,10 @@
     .projects__item3 {
         grid-area: item3;
         @extend %item;
+        cursor: pointer;
             
         &:hover .projects__item3-block3 {
             @extend %hover;
-            cursor: pointer;
         }
         .projects__item3-block3 {
             @extend %item-block;
@@ -122,10 +123,10 @@
     .projects__item4 {
         grid-area: item4;
         @extend %item;
+        cursor: pointer;
             
         &:hover .projects__item4-block4 {
             @extend %hover;
-            cursor: pointer;
         }
         .projects__item4-block4 {
             @extend %item-block;
@@ -141,10 +142,10 @@
     .projects__item5 {
         grid-area: item5;
         @extend %item;
+        cursor: pointer;
             
         &:hover .projects__item5-block5 {
             @extend %hover;
-            cursor: pointer;
         }
         .projects__item5-block5 {
             @extend %item-block;
@@ -160,10 +161,10 @@
     .projects__item6 {
         grid-area: item6;
         @extend %item;
+        cursor: pointer;
             
         &:hover .projects__item6-block6 {
             @extend %hover;
-            cursor: pointer;
         }
         .projects__item6-block6 {
             @extend %item-block;
@@ -179,14 +180,14 @@
 }
 @media (max-width: 980px) {
     .projects {
-        width: 100%;
-        height: 962px;
-        grid-template-columns: repeat(3, 295px);
-        grid-template-rows: 112px 360px 360px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
         grid-column-gap: 18px;
         grid-row-gap: 18px;
+        padding: 64px 30px;
+
         
-        .projects__titul {
+        .projects__title {
             font-size: 48px;
             line-height: 60px;
             margin-bottom: 16px;
@@ -196,24 +197,20 @@
             font-size: 24px;
             line-height: 30px;
             font-weight: bold;
-            margin: 280px 24px 4px;
         }
         %block-text2 {
             font-size: 16px;
             line-height: 20px;
-            margin: 4px 24px 0px;
         }
     }
 }
 @media (max-width: 768px) {
     .projects {
         display: grid;
-        width: 100%;
-        height: 1326px;
-        grid-template-columns: repeat(2, 285px);
-        grid-template-rows: 120px 350px 350px 350px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
         grid-template-areas: 
-            "titul . "
+            "title title"
             "item1 item2"
             "item3 item4"
             "item5 item6";
@@ -221,21 +218,23 @@
         grid-row-gap: 18px;
         justify-content: center;
 
-        .projects__titul {
+        .projects__title {
             margin-bottom: 18px;
+        }
+        %block-text1 {
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: bold;
         }
     }
 }
 @media (max-width: 500px) {
     .projects {
-        width: 100%;
-        height: 2309px;
         display: grid;
-        grid-template-columns: repeat(1, 285px);
-        grid-template-rows: 61px 350px 350px 350px;
-        height: 2309px;
+        grid-template-columns: 285px;
+        grid-template-rows: auto;
         grid-template-areas: 
-            "titul"
+            "title"
             "item1" 
             "item2"
             "item3"
@@ -246,10 +245,15 @@
         grid-row-gap: 20px;
         justify-content: center;
 
-        .projects__titul {
+        .projects__title {
             font-size: 24px;
             line-height: 30px;
             margin-bottom: 0;
+        }
+        %block-text1 {
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: bold;
         }
     }
 }
