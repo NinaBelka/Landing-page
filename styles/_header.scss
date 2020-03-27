@@ -6,15 +6,16 @@ body {
   position: relative;
   color: white;
   height: 894px;
-  background-image: url(/images/image.png);
+  background-image: url(/Images/image.png);
   background-position: center;
   background-size: cover;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12),
+    0px 1px 5px rgba(0, 0, 0, 0.2);
 
   .header__nav-name {
     font-size: 24px;
     padding: 15px 48px;
-    background: #4D636F;
+    background: #4d636f;
   }
 
   .header__nav {
@@ -38,17 +39,17 @@ body {
     cursor: pointer;
 
     &:hover {
-      border-bottom: 2px solid #A1C5D9;
+      border-bottom: 2px solid #a1c5d9;
     }
 
     &:focus {
-      color: #A1C5D9;
+      color: #a1c5d9;
     }
 
     &:active {
       font-weight: 600;
       color: white;
-      border-bottom: 2px solid #FFFFFF;
+      border-bottom: 2px solid #ffffff;
     }
   }
 
@@ -105,14 +106,13 @@ body {
 
     .header__nav-list {
       right: 0;
-      background-color: #4D636F;
+      background-color: #4d636f;
       flex-direction: column;
       width: 250px;
       transform: translateX(300px);
       transition: transform 500ms ease-in-out;
       will-change: transform;
       z-index: 2;
-
     }
 
     .header__nav-list--active {
@@ -123,9 +123,8 @@ body {
       flex: 0 1 auto;
       width: 100%;
       height: auto;
-      border: 1px solid rgba(0, 0, 0, .3);
-      box-shadow: 0 -5px 14px 8px rgba(0, 0, 0, .3);
-
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      box-shadow: 0 -5px 14px 8px rgba(0, 0, 0, 0.3);
     }
 
     .header__nav-item-link {
@@ -138,7 +137,6 @@ body {
     }
 
     .company {
-
       .company__page {
         margin: 223px 0px 30px;
       }
@@ -155,7 +153,6 @@ body {
     height: 717px;
 
     .company {
-
       .company__page {
         font-size: 32px;
         line-height: 40px;
@@ -172,9 +169,7 @@ body {
 
 @media (max-width: 500px) {
   .header {
-
     .company {
-
       .company__page {
         font-weight: bold;
         font-size: 24px;
