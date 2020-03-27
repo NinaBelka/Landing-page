@@ -30,33 +30,34 @@
         
     %item-block {
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px 20px;
         top: 100%;
         left: 0;
         width: 100%;
         background: rgba(227, 27, 75, 0.6);            
         color: white;
-        margin: 0;
         transition-duration: 300ms;
-        bottom: 0;
-        right: 0;
+        height: 100%;
     }
     %block-text1 {
         font-size: 24px;
         line-height: 30px;
         font-weight: bold;
-        padding: 20px 0px 8px 20px;
+        padding-bottom: 8px;
     }
     %block-text2 {
         font-size: 16px;
         line-height: 20px;
-        padding-left: 20px;    
     }
     %item {
         position: relative;
         overflow: hidden;
     }
     %hover {
-        display: block;
+        display: flex;
         transition-duration: 300ms;
         top: 0px;
     }
