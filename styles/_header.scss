@@ -110,18 +110,12 @@ body {
       flex-direction: column;
       width: 200px;
       display: none;
-      transition: transform 500ms ease-in-out;
       z-index: 2;
-}
+    }
 
     .header__nav-list--active {
       display: block;
-      transform: translateX(0);
-      -webkit-transform: translateX(0);
-      -moz-transform: translateX(0);
-      -ms-transform: translateX(0);
-      -o-transform: translateX(0);
-}
+    }
 
     .header__nav-item {
       flex: 0 1 auto;
@@ -159,7 +153,6 @@ body {
     .header__nav-item-link {
       margin-left: 30px;
     }
-
 
     .company {
       .company__page {

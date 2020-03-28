@@ -111,19 +111,10 @@ body {
             flex-direction: column;
     width: 200px;
     display: none;
-    -webkit-transition: -webkit-transform 500ms ease-in-out;
-    transition: -webkit-transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
     z-index: 2;
   }
   .header .header__nav-list--active {
     display: block;
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
   }
   .header .header__nav-item {
     -webkit-box-flex: 0;
